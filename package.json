@@ -9,6 +9,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.23.7"
+    "astro": "^0.23.7",
+    "classnames": "^2.3.1",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }
