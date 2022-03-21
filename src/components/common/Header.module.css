@@ -1,0 +1,98 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-2) var(--spacing-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  gap: var(--spacing-05);
+}
+
+.icon {
+  flex: none;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.univ {
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.lab {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: 4px;
+}
+
+.nav {
+  display: flex;
+  gap: var(--spacing-3);
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: var(--spacing-1);
+  list-style: none;
+  padding: 0;
+}
+
+.menuItem a {
+  display: block;
+  padding: 0 var(--spacing-05);
+  line-height: 3rem;
+  text-decoration: none;
+  color: var(--body-black);
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+}
+
+.menuItem.active a {
+  background-color: var(--primary-red);
+  color: var(--white);
+  pointer-events: none;
+}
+
+.menuItem a:hover {
+  background-color: var(--background-red);
+}
+
+.langSwitch {
+  display: flex;
+  outline: 1px solid var(--primary-red);
+  outline-offset: -1px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.langSwitchItem {
+  display: flex;
+  width: 3rem;
+  line-height: 3rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--body-black);
+  text-decoration: none;
+}
+
+.langSwitchItem:hover {
+  background-color: var(--background-red);
+}
+
+.langSwitchItem.active {
+  background-color: var(--primary-red);
+  color: var(--white);
+}

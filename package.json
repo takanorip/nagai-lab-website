@@ -9,6 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/renderer-react": "^0.5.0",
     "astro": "^0.23.7",
     "classnames": "^2.3.1",
     "typescript-plugin-css-modules": "^3.4.0"
