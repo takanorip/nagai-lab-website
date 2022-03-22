@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background-color: var(--background-light-gray);
+  position: relative;
+}
+
+.headerInner {
+  max-width: 1248px;
+  height: 20rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-3);
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: var(--font-size-h1);
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

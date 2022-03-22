@@ -9,6 +9,7 @@
   padding: var(--spacing-2) var(--spacing-3);
   border-bottom: 1px solid var(--border);
   background-color: var(--white);
+  z-index: 10;
 }
 
 .logo {

@@ -1,4 +1,4 @@
-[
+const news = [
   {
     date: "2021.9.9",
     title:
@@ -321,3 +321,5 @@
     url: "http://mlhlcr2016.tanichu.com/",
   },
 ];
+
+export default news

@@ -1,0 +1,16 @@
+---
+import Head from '../components/common/Head.astro';
+import Header from '../components/common/Header.tsx';
+import Footer from '../components/common/Footer.tsx';
+import News from '../components/news/News.tsx';
+---
+<html lang="ja">
+<head>
+  <Head title="NEWS | 大阪大学基礎工学研究科 長井研究室" />
+</head>
+<body>
+  <Header location="news" />
+  <News client:load />
+  <Footer />
+</body>
+</html>

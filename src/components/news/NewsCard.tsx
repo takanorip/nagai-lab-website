@@ -15,7 +15,7 @@ const NewsCard = ({ date, title, url }: Props) => {
         <p className={styles.date}>{date}</p>
         <p className={styles.title}>{title}</p>
       </div>
-      <ArrowUpRight className={styles.icon} />
+      {url && <ArrowUpRight className={styles.icon} />}
     </a>
   );
 };

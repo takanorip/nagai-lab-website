@@ -8,6 +8,7 @@ import TopicsIllust from "../common/illustrations/Topics";
 import PapersIllust from "../common/illustrations/Papers";
 import EquipmentsIllust from "../common/illustrations/Equipments";
 import { dictionary } from "../../i18n/top";
+import news from '../../data/news';
 
 type Props = {
   lang?: "en" | "ja";
@@ -288,21 +289,13 @@ const Top = ({ lang = "ja" }: Props) => {
             <Button href={`/${lang === "en" && `en/`}news`}>View More</Button>
           </div>
           <div className={styles.newsList}>
-            <NewsCard
-              date="2021.09.09"
-              title="長井教授が第9回Advanced Robotics Best Survey Paper Awardを受賞しました。"
-              url=""
-            />
-            <NewsCard
-              date="2021.09.09"
-              title="長井教授が第9回Advanced Robotics Best Survey Paper Awardを受賞しました。"
-              url=""
-            />
-            <NewsCard
-              date="2021.09.09"
-              title="長井教授が第9回Advanced Robotics Best Survey Paper Awardを受賞しました。"
-              url=""
-            />
+            {news.slice(0, 3).map(({ date, title, url }) => (
+              <NewsCard
+                date={date}
+                title={title}
+                url={url}
+              />
+            ))}
           </div>
         </div>
       </section>

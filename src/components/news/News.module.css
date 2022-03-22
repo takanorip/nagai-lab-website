@@ -1,0 +1,15 @@
+.section {
+  max-width: 928px;
+  margin: 0 auto;
+  padding: var(--spacing-13) var(--spacing-3);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.select {
+  margin-bottom: var(--spacing-5);
+}
