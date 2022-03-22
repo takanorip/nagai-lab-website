@@ -1,0 +1,23 @@
+.link {
+  width: fit-content;
+  min-width: 10rem;
+  height: 3rem;
+  padding: 0 var(--spacing-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-default);
+  text-decoration: none;
+  border: 2px solid var(--primary-red);
+  letter-spacing: 1px;
+}
+
+.link.normal {
+  color: var(--white);
+  background-color: var(--primary-red);
+}
+
+.link:hover {
+  color: var(--primary-red);
+  background-color: var(--white);
+}

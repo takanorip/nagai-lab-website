@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-5) 0;
+  border-top: 1px solid var(--border);
+}
+
+.text {
+  font-weight: bold;
+  margin-bottom: var(--spacing-1);
+}
+
+.email {
+  margin-bottom: var(--spacing-3);
+  display: flex;
+  gap: var(--spacing-0);
+}
+
+.email a {
+  text-decoration: none;
+  color: var(--body-black);
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+.small {
+  font-size: var(--font-size-minimum);
+  color: var(--dark-gray);
+  text-transform: uppercase;
+}

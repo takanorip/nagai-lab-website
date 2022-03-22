@@ -1,0 +1,200 @@
+.messages {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-13);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--spacing-13) var(--spacing-2) var(--spacing-8) 9rem;
+}
+
+.keyMessage {
+  display: block;
+  font-size: var(--font-size-h1);
+  line-height: 1.4;
+}
+
+.lab {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.labGroupName {
+  letter-spacing: 1px;
+}
+
+.labName {
+  font-size: var(--font-size-h3);
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.mainVisual {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-8);
+  line-height: 0;
+}
+
+.mainVisual img {
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 1px solid var(--border);
+}
+
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--spacing-21) 7.5rem;
+}
+
+.heading {
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--primary-red);
+}
+
+.about {
+  display: grid;
+  gap: var(--spacing-13);
+  grid-template-columns: 480px 1fr;
+}
+
+.aboutMessages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  max-width: 480px;
+}
+
+.aboutMessagesInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.aboutProverbWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-0);
+}
+
+.aboutProverb {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  padding: var(--spacing-0);
+  background-color: var(--background-red);
+  width: fit-content;
+}
+
+.aboutProverbName {
+  padding: var(--spacing-0);
+  background-color: var(--background-red);
+  width: fit-content;
+  font-style: italic;
+}
+
+.aboutMessagesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.aboutMessage {
+  display: block;
+}
+
+.aboutImg {
+  line-height: 0;
+  margin-right: -3.5rem;
+}
+
+.aboutImg img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.researchOuter {
+  background-color: var(--background-red);
+}
+
+.researchMessage {
+  margin-top: var(--spacing-5);
+  margin-bottom: var(--spacing-8);
+}
+
+.researchMessage span {
+  display: block;
+}
+
+.researchList {
+  list-style: none;
+  display: grid;
+  gap: var(--spacing-2);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  padding: 0;
+}
+
+.researchItem {
+  background-color: var(--white);
+  border-radius: var(--border-radius-default);
+  padding-bottom: 2rem;
+}
+
+.researchItem a {
+  text-decoration: none;
+  color: var(--body-black);
+}
+
+.researchItem a:hover {
+  color: var(--primary-red);
+}
+
+.researchItemIllust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 18rem;
+}
+
+.researchItemName {
+  font-size: var(--font-size-h3);
+  text-align: center;
+}
+
+.newsLeftWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.newsWrapper {
+  display: flex;
+  gap: var(--spacing-8);
+  justify-content: space-between;
+}
+
+.newsList {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}

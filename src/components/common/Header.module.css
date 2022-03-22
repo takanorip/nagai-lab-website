@@ -8,6 +8,7 @@
   align-items: center;
   padding: var(--spacing-2) var(--spacing-3);
   border-bottom: 1px solid var(--border);
+  background-color: var(--white);
 }
 
 .logo {
@@ -86,6 +87,7 @@
   align-items: center;
   color: var(--body-black);
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .langSwitchItem:hover {

@@ -3,6 +3,6 @@
     "moduleResolution": "node"
   },
   "include": [
-    "style.d.ts"
+    "./src/style.d.ts"
   ],
 }
