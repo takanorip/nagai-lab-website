@@ -1,0 +1,39 @@
+.wrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: var(--spacing-13) var(--spacing-3) var(--spacing-21);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-13);
+}
+
+.mapWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.addressBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.name {
+  font-weight: bold;
+  font-size: var(--font-size-large);
+}
+
+.map {
+  width: 100%;
+  height: 35rem;
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
