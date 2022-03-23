@@ -8,7 +8,7 @@ import TopicsIllust from "../common/illustrations/Topics";
 import PapersIllust from "../common/illustrations/Papers";
 import EquipmentsIllust from "../common/illustrations/Equipments";
 import { dictionary } from "../../i18n/top";
-import news from '../../data/news';
+import { news } from '../../data/news';
 
 type Props = {
   lang?: "en" | "ja";

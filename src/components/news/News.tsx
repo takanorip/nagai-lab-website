@@ -4,7 +4,7 @@ import PageHeader from "../common/PageHeader";
 import Select from "../common/Select";
 import NewsCard from "./NewsCard";
 import styles from "./News.module.css";
-import news from '../../data/news';
+import { news } from '../../data/news';
 import { range } from '../../utils/number'
 
 type Props = {
