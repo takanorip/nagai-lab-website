@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "../common/Main";
+import PageHeader from "../common/PageHeader";
 import { dictionary } from "../../i18n/access";
 import styles from "./Access.module.css";
 
@@ -10,6 +11,7 @@ type Props = {
 const Access = ({ lang = "ja" }: Props) => {
   return (
     <Main>
+      <PageHeader>Access</PageHeader>
       <div className={styles.wrapper}>
         <div className={styles.mapWrapper}>
           <div className={styles.addressBox}>

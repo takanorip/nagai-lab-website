@@ -11,7 +11,23 @@ export type Publication = {
 export const publications = [
   {
     year: 2022,
-    contents: [],
+    contents: [
+      {
+        title: "Journal",
+        items: [
+          {
+            url: "https://www.tandfonline.com/doi/full/10.1080/01691864.2021.2012512",
+            text: 'Chie Hieida, Takayuki Nagai, "Survey and perspective on social emotions in robotics", 2022',
+            selected: true,
+          },
+          {
+            url: "https://www.tandfonline.com/doi/full/10.1080/01691864.2022.2029720",
+            text: 'Tatsuya Sakai, Takayuki Nagai, "Explainable autonomous robots: a survey and perspective", 2022',
+            selected: true,
+          },
+        ],
+      },
+    ],
   },
   {
     year: 2021,
@@ -19,6 +35,11 @@ export const publications = [
       {
         title: "Journal",
         items: [
+          {
+            url: "https://www.tandfonline.com/doi/full/10.1080/01691864.2021.2011780",
+            text: 'Shingo Shimoda, Lorenzo Jamone, Dimitri Ognibene, Takayuki Nagai, Alessandra Sciutti, Alvaro Costa-Garcia, Yohei Oseki, Tadahiro Taniguchi, "What is the role of the next generation of cognitive robotics?", 2021',
+            selected: true,
+          },
           {
             url: "",
             text: 'Ryo Kuniyasu, Tomoaki Nakamura, Tadahiro Taniguchi, Takayuki Nagai, "Robot Concept Acquisition Based on Interaction Between Probabilistic and Deep Generative Models", Frontiers in Computer Science, Vol.3, 2021',
@@ -316,8 +337,9 @@ export const publications = [
             text: 'Masatoshi Nagano, Tomoaki Nakamura, Takayuki Nagai, Daichi Mochihashi, Ichiro Kobayashi, Wataru Takano, "HVGH: Unsupervised Segmentation for High-Dimensional Time Series Using Deep Neural Compression and Statistical Generative Model", Frontiers in Robotics and AI, vol.6, 2019',
           },
           {
-            url: "",
+            url: "https://www.tandfonline.com/doi/full/10.1080/01691864.2019.1632223",
             text: 'T.Tangiuchi, D.Mochihashi, T.Nagai, S.Uchida, N.Inoue, I.Kobayashi, T.Nakamura, Y.Hagiwara, N.Iwahashi, T.Inamura, "Survey on frontiers of language and robotics", Advanced Robotics,1-31,2019,DOI: 10.1080/01691864.2019.1632223',
+            selected: true,
           },
           {
             url: "",
@@ -1223,8 +1245,9 @@ export const publications = [
         title: "Journal",
         items: [
           {
-            url: "",
+            url: "https://www.tandfonline.com/doi/abs/10.1080/01691864.2016.1164622",
             text: 'Tadahiro Taniguchi, Takayuki Nagai, Tomoaki Nakamura, Naoto Iwahashi, Tetsuya Ogata, and Hideki Asoh, "Symbol Emergence in Robotics: A Survey", Advanced Robotics to appear',
+            selected: true,
           },
           {
             url: "",

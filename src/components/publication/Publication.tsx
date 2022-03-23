@@ -8,7 +8,6 @@ import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
 import Select from "../common/Select";
 import { publications } from "../../data/publication";
-import { range } from "../../utils/number";
 import styles from "./Publication.module.css";
 
 const filter = (year: string) => {
@@ -40,7 +39,9 @@ const Publication = () => {
             {publications
               .filter((p) => p.contents.length > 0)
               .map(({ year }) => (
-                <option key={year} value={year}>{year}</option>
+                <option key={year} value={year}>
+                  {year}
+                </option>
               ))}
           </Select>
         </div>
@@ -64,7 +65,11 @@ const Publication = () => {
                                   <a href={item.url}>{item.text}</a>
                                 </li>
                               );
-                            return <li key={item.text} className={styles.item}>{item.text}</li>;
+                            return (
+                              <li key={item.text} className={styles.item}>
+                                {item.text}
+                              </li>
+                            );
                           })}
                         </ul>
                       </div>

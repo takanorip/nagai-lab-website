@@ -1,0 +1,145 @@
+.wrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: var(--spacing-13) var(--spacing-3) var(--spacing-21);
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: var(--spacing-5);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-21);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.sectionTitle {
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+  font-size: var(--font-size-h2);
+}
+
+.sectionTitle::before {
+  content: "";
+  width: 1.5rem;
+  height: 0.75rem;
+  background-color: var(--primary-red);
+  border-radius: 1rem;
+  margin-top: 8px;
+}
+
+.sectionContents {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.content {
+  display: flex;
+  text-decoration: none;
+  color: var(--body-black);
+  border-radius: var(--border-radius-default);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+}
+
+.content:hover {
+  color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+.content:hover .contentImg {
+  border-color: var(--primary-red);
+}
+
+.contentImg {
+  padding: var(--spacing-5);
+  border-right: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentImg img {
+  width: 200px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  padding: var(--spacing-5);
+}
+
+.contentTitle {
+  font-size: var(--font-size-large);
+}
+
+.description {
+  line-height: 1.7;
+}
+
+.papers {
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.paper {
+  padding: var(--spacing-3) 0;
+  border-top: 1px solid var(--border);
+}
+
+.paper a {
+  color: var(--body-black);
+}
+
+.paper a:hover {
+  color: var(--primary-red);
+  text-decoration: none;
+}
+
+.side {
+  padding: var(--spacing-3) var(--spacing-3) var(--spacing-3) var(--spacing-5);
+  border-radius: var(--border-radius-default);
+  background-color: var(--background-light-gray);
+  border: 1px solid var(--border);
+  position: sticky;
+  top: 8rem;
+  height: fit-content;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  line-height: 3rem;
+  color: var(--body-black);
+  text-decoration: none;
+}
+
+.menu.active {
+  color: var(--primary-red);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.menu.active::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--primary-red);
+  position: absolute;
+  top: 55%;
+  left: -1.125rem;
+  transform: translateY(-51%);
+}
