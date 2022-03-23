@@ -8,7 +8,7 @@ import TopicsIllust from "../common/illustrations/Topics";
 import PapersIllust from "../common/illustrations/Papers";
 import EquipmentsIllust from "../common/illustrations/Equipments";
 import { dictionary } from "../../i18n/top";
-import { news } from '../../data/news';
+import { news } from "../../data/news";
 
 type Props = {
   lang?: "en" | "ja";
@@ -290,11 +290,7 @@ const Top = ({ lang = "ja" }: Props) => {
           </div>
           <div className={styles.newsList}>
             {news.slice(0, 3).map(({ date, title, url }) => (
-              <NewsCard
-                date={date}
-                title={title}
-                url={url}
-              />
+              <NewsCard date={date} title={title} url={url} />
             ))}
           </div>
         </div>

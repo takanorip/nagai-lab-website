@@ -1,14 +1,21 @@
 import React, { FC, InputHTMLAttributes } from "react";
 import styles from "./Select.module.css";
 
-type Props = InputHTMLAttributes<HTMLSelectElement>
+type Props = InputHTMLAttributes<HTMLSelectElement>;
 
 const Select: FC<Props> = ({ children, ...props }) => {
   return (
     <div className={styles.wrapper}>
-      <label className={styles.label} htmlFor="archives">Archives</label>
+      <label className={styles.label} htmlFor="archives">
+        Archives
+      </label>
       <div className={styles.selectWrapper}>
-        <select className={styles.select} name="archives" id="archives" {...props}>
+        <select
+          className={styles.select}
+          name="archives"
+          id="archives"
+          {...props}
+        >
           {children}
         </select>
         <svg
