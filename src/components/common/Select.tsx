@@ -5,7 +5,7 @@ type Props = {
   label?: string;
 } & InputHTMLAttributes<HTMLSelectElement>;
 
-const Select: FC<Props> = ({ label = 'Archives', children, ...props }) => {
+const Select: FC<Props> = ({ label = "Archives", children, ...props }) => {
   return (
     <div className={styles.wrapper}>
       <label className={styles.label} htmlFor="archives">

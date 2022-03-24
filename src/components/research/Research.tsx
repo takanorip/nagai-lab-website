@@ -18,18 +18,18 @@ const selectedPapers = publications
   .flat()
   .filter((item) => item.selected === true);
 
-  const filter = (type: '' | 'previous' | 'current') => {
-    if (type === "") {
-      return topics;
-    }
-    if (type === 'previous') {
-      return topics.filter((t) => !t.current);
-    }
-    if (type === 'current') {
-      return topics.filter((t) => t.current);
-    }
+const filter = (type: "" | "previous" | "current") => {
+  if (type === "") {
     return topics;
-  };
+  }
+  if (type === "previous") {
+    return topics.filter((t) => !t.current);
+  }
+  if (type === "current") {
+    return topics.filter((t) => t.current);
+  }
+  return topics;
+};
 
 const Research = ({ lang = "ja" }: Props) => {
   const [currentSection, setCurrentSection] = useState("project");
@@ -113,7 +113,9 @@ const Research = ({ lang = "ja" }: Props) => {
               {filteredTopics.map((t) => (
                 <li className={styles.topic}>
                   <a className={styles.topicLink} href={t.url}>
-                    <figure className={styles.topicImg}><img src={'/assets/' + t.imgUrl} alt="" /></figure>
+                    <figure className={styles.topicImg}>
+                      <img src={"/assets/" + t.imgUrl} alt="" />
+                    </figure>
                     <p className={styles.topicTitle}>{t.title}</p>
                   </a>
                 </li>
