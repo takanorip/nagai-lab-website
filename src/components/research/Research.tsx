@@ -3,7 +3,7 @@ import cx from "classnames";
 import { InView } from "react-intersection-observer";
 import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
-import { projects } from "../../data/research";
+import { projects, topics } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
 
@@ -67,6 +67,25 @@ const Research = ({ lang = "ja" }: Props) => {
               {selectedPapers.map((p) => (
                 <li className={styles.paper}>
                   {p.url ? <a href={p.url}>{p.text}</a> : <>{p.text}</>}
+                </li>
+              ))}
+            </ul>
+          </InView>
+          <InView
+            as="section"
+            onChange={(inView) => onChangeIntersection(inView, "topics")}
+            className={styles.section}
+            id="topics"
+            threshold={0.5}
+          >
+            <h2 className={styles.sectionTitle}>Research Topics</h2>
+            <ul className={styles.topics}>
+              {topics.map((t) => (
+                <li className={styles.topic}>
+                  <a className={styles.topicLink} href={t.url}>
+                    <figure className={styles.topicImg}><img src={'/assets/' + t.imgUrl} alt="" /></figure>
+                    <p className={styles.topicTitle}>{t.title}</p>
+                  </a>
                 </li>
               ))}
             </ul>
