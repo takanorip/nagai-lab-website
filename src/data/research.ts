@@ -31,6 +31,60 @@ export const projects = [
 
 export const topics = [
   {
+    title: "知能発達モデル",
+    imgUrl: "/thumbnails/aoki_h30.jpg",
+    url: "/research/aoki_h30",
+    current: true,
+  },
+  {
+    title: "感情モデル H30",
+    imgUrl: "/thumbnails/hieida_h30.jpg",
+    url: "/research/hieida_h30",
+    current: true,
+  },
+  {
+    title: "遠隔操作による行動の学習",
+    imgUrl: "/thumbnails/iwata_h30.jpg",
+    url: "/research/iwata_h30",
+    current: true,
+  },
+  {
+    title: "ニューラルトピックモデル",
+    imgUrl: "/thumbnails/minamisaka_h30.jpg",
+    url: "/research/minamisaka_h30",
+    current: true,
+  },
+  {
+    title: "ロボットの実世界理解",
+    imgUrl: "/thumbnails/miyazawa_h30.jpg",
+    url: "/research/miyazawa_h30",
+    current: true,
+  },
+  {
+    title: "表現,機械学習,モーション,ジェスチャ",
+    imgUrl: "/thumbnails/shimazu_h30.jpg",
+    url: "/research/shimazu_h30",
+    current: true,
+  },
+  {
+    title: "他者モデル, 協調, 深層強化学習",
+    imgUrl: "/thumbnails/tuan_h30.jpg",
+    url: "/research/tuan_h30",
+    current: true,
+  },
+  {
+    title: "IITによる子どもの集団解析",
+    imgUrl: "/thumbnails/yamashita_h30.jpg",
+    url: "/research/yamashita_h30",
+    current: true,
+  },
+  {
+    title: "乳幼児の気質推定",
+    imgUrl: "/thumbnails/uemura_h30.jpg",
+    url: "/research/uemura_h30",
+    current: true,
+  },
+  {
     title: "サービスロボットによるおもてなし",
     imgUrl: "/thumbnails/gacho_h29.png",
     url: "/research/gacho_h29",
@@ -79,50 +133,5 @@ export const topics = [
     title: "マルチモーダル深層生成モデル",
     imgUrl: "/thumbnails/fujimoto_h29.png",
     url: "/research/fujimoto_h29",
-  },
-  {
-    title: "知能発達モデル",
-    imgUrl: "/thumbnails/aoki_h30.jpg",
-    url: "/research/aoki_h30",
-  },
-  {
-    title: "感情モデル H30",
-    imgUrl: "/thumbnails/hieida_h30.jpg",
-    url: "/research/hieida_h30",
-  },
-  {
-    title: "遠隔操作による行動の学習",
-    imgUrl: "/thumbnails/iwata_h30.jpg",
-    url: "/research/iwata_h30",
-  },
-  {
-    title: "ニューラルトピックモデル",
-    imgUrl: "/thumbnails/minamisaka_h30.jpg",
-    url: "/research/minamisaka_h30",
-  },
-  {
-    title: "ロボットの実世界理解",
-    imgUrl: "/thumbnails/miyazawa_h30.jpg",
-    url: "/research/miyazawa_h30",
-  },
-  {
-    title: "表現,機械学習,モーション,ジェスチャ",
-    imgUrl: "/thumbnails/shimazu_h30.jpg",
-    url: "/research/shimazu_h30",
-  },
-  {
-    title: "他者モデル, 協調, 深層強化学習",
-    imgUrl: "/thumbnails/tuan_h30.jpg",
-    url: "/research/tuan_h30",
-  },
-  {
-    title: "IITによる子どもの集団解析",
-    imgUrl: "/thumbnails/yamashita_h30.jpg",
-    url: "/research/yamashita_h30",
-  },
-  {
-    title: "乳幼児の気質推定",
-    imgUrl: "/thumbnails/uemura_h30.jpg",
-    url: "/research/uemura_h30",
   },
 ];

@@ -1,13 +1,15 @@
 import React, { FC, InputHTMLAttributes } from "react";
 import styles from "./Select.module.css";
 
-type Props = InputHTMLAttributes<HTMLSelectElement>;
+type Props = {
+  label?: string;
+} & InputHTMLAttributes<HTMLSelectElement>;
 
-const Select: FC<Props> = ({ children, ...props }) => {
+const Select: FC<Props> = ({ label = 'Archives', children, ...props }) => {
   return (
     <div className={styles.wrapper}>
       <label className={styles.label} htmlFor="archives">
-        Archives
+        {label}
       </label>
       <div className={styles.selectWrapper}>
         <select

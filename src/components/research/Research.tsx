@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, ChangeEventHandler } from "react";
 import cx from "classnames";
 import { InView } from "react-intersection-observer";
 import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
+import Select from "../common/Select";
 import { projects, topics } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
@@ -17,14 +18,38 @@ const selectedPapers = publications
   .flat()
   .filter((item) => item.selected === true);
 
+  const filter = (type: '' | 'previous' | 'current') => {
+    if (type === "") {
+      return topics;
+    }
+    if (type === 'previous') {
+      return topics.filter((t) => !t.current);
+    }
+    if (type === 'current') {
+      return topics.filter((t) => t.current);
+    }
+    return topics;
+  };
+
 const Research = ({ lang = "ja" }: Props) => {
   const [currentSection, setCurrentSection] = useState("project");
+  const [selectedValue, setSelectedValue] = useState("");
+  const [filteredTopics, setFilteredTopics] = useState(topics);
 
   const onChangeIntersection = (inView: boolean, sectionName: string) => {
     if (inView && currentSection !== sectionName) {
       setCurrentSection(sectionName);
     }
   };
+
+  const onChange: ChangeEventHandler<HTMLSelectElement> = useCallback(
+    (event) => {
+      const value = event.target.value;
+      setSelectedValue(value);
+      setFilteredTopics(filter(value));
+    },
+    []
+  );
 
   return (
     <Main>
@@ -79,8 +104,13 @@ const Research = ({ lang = "ja" }: Props) => {
             threshold={0.5}
           >
             <h2 className={styles.sectionTitle}>Research Topics</h2>
+            <Select label="" value={selectedValue} onChange={onChange}>
+              <option value="">All</option>
+              <option value="current">Current Topics</option>
+              <option value="previous">Previous Topics</option>
+            </Select>
             <ul className={styles.topics}>
-              {topics.map((t) => (
+              {filteredTopics.map((t) => (
                 <li className={styles.topic}>
                   <a className={styles.topicLink} href={t.url}>
                     <figure className={styles.topicImg}><img src={'/assets/' + t.imgUrl} alt="" /></figure>
