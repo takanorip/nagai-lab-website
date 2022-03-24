@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 640 320" style="enable-background:new 0 0 640 320;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#B3B3B3;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{font-family:'AdobeDevanagari-Regular';}
+	.st3{font-size:16px;}
+	.st4{fill:none;stroke:#B3B3B3;stroke-width:3;stroke-miterlimit:10;}
+	.st5{fill:#B3B3B3;}
+	.st6{fill:none;stroke:#B3B3B3;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}
+	.st7{font-family:'TimesNewRomanPS-BoldItalicMT';}
+	.st8{fill:#FFFFFF;stroke:#B3B3B3;stroke-width:2;}
+	.st9{fill:none;stroke:#B3B3B3;stroke-width:3;}
+</style>
+<rect x="24.3" y="214.9" class="st0" width="53" height="36"/>
+<rect x="27.5" y="216.1" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 27.5137 228.9426)"><tspan x="0" y="0" class="st2 st3">Vision </tspan><tspan x="0" y="16" class="st2 st3">Info.</tspan></text>
+<rect x="168.5" y="214.9" class="st0" width="53" height="36"/>
+<rect x="171.7" y="216.1" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 171.6759 228.9426)"><tspan x="0" y="0" class="st2 st3">Tacttile </tspan><tspan x="0" y="16" class="st2 st3">Info.</tspan></text>
+<rect x="96.5" y="214.9" class="st0" width="53" height="36"/>
+<rect x="99.7" y="216.1" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 99.6759 228.9426)"><tspan x="0" y="0" class="st2 st3">Audio </tspan><tspan x="0" y="16" class="st2 st3">Info.</tspan></text>
+<line class="st4" x1="50.5" y1="199.5" x2="194.5" y2="199.5"/>
+<line class="st4" x1="194.5" y1="215" x2="194.5" y2="200"/>
+<g>
+	<g>
+		<line class="st4" x1="122.5" y1="215" x2="122.5" y2="192.9"/>
+		<g>
+			<polygon class="st5" points="113.4,194.1 131.6,194.1 122.5,185 			"/>
+		</g>
+	</g>
+</g>
+<line class="st6" x1="50.5" y1="215" x2="50.5" y2="200"/>
+<rect x="158.5" y="99.5" class="st0" width="20" height="20"/>
+<rect x="159.7" y="98.7" class="st1" width="18.3" height="17.3"/>
+<text transform="matrix(1 0 0 1 159.6759 111.9856)" class="st7 st3">σ</text>
+<text transform="matrix(0.583 0 0 0.583 168.3009 117.3138)" class="st7 st3">z</text>
+<text transform="matrix(1 0 0 1 171.9308 111.9856)" class="st7 st3">2</text>
+<rect x="68.5" y="98.5" class="st0" width="20" height="20"/>
+<rect x="69.7" y="97.7" class="st1" width="16.3" height="17.3"/>
+<text transform="matrix(1 0 0 1 69.6759 110.7395)" class="st2 st3"> </text>
+<text transform="matrix(1 0 0 1 72.9181 111.2317)" class="st7 st3">µ</text>
+<text transform="matrix(0.583 0 0 0.583 82.1368 116.3137)" class="st7 st3">z</text>
+<rect x="96.5" y="148.7" class="st0" width="53" height="36"/>
+<rect x="99.7" y="149.9" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 99.6759 162.7185)"><tspan x="0" y="0" class="st2 st3">Info. </tspan><tspan x="0" y="16" class="st2 st3">Fusion</tspan></text>
+<line class="st4" x1="122.5" y1="148.5" x2="122.5" y2="133.5"/>
+<g>
+	<g>
+		<line class="st4" x1="78.5" y1="134" x2="78.5" y2="126.9"/>
+		<g>
+			<polygon class="st5" points="69.4,128.1 87.6,128.1 78.5,119 			"/>
+		</g>
+	</g>
+</g>
+<line class="st4" x1="78" y1="133.5" x2="168" y2="133.5"/>
+<g>
+	<g>
+		<line class="st4" x1="168.5" y1="134" x2="168.5" y2="126.9"/>
+		<g>
+			<polygon class="st5" points="159.4,128.1 177.6,128.1 168.5,119 			"/>
+		</g>
+	</g>
+</g>
+<polyline class="st4" points="78.5,99 78.5,84 78.5,84.5 168.5,84.5 168.5,85 168.5,100 "/>
+<g>
+	<g>
+		<line class="st4" x1="122.5" y1="85" x2="122.5" y2="77.9"/>
+		<g>
+			<polygon class="st5" points="113.4,79.1 131.6,79.1 122.5,70 			"/>
+		</g>
+	</g>
+</g>
+<rect x="112.5" y="49.5" class="st0" width="20" height="20"/>
+<rect x="115.7" y="50.7" class="st1" width="14.3" height="17.3"/>
+<text transform="matrix(1 0 0 1 115.6759 63.7395)"><tspan x="0" y="0" class="st2 st3"> </tspan><tspan x="3.2" y="0.5" class="st7 st3">z</tspan></text>
+<g>
+	<g>
+		<polyline class="st4" points="432,140.1 432,30.5 122.5,30.5 122.5,31.1 122.5,49.3 		"/>
+		<g>
+			<polygon class="st5" points="422.9,138.9 441.1,138.9 432,148 			"/>
+		</g>
+	</g>
+</g>
+<rect x="379.5" y="148.5" class="st0" width="98" height="36"/>
+<rect x="381.8" y="149.7" class="st1" width="94.3" height="33.6"/>
+<text transform="matrix(1 0 0 1 381.8381 162.4934)"><tspan x="0" y="0" class="st2 st3">Info.</tspan><tspan x="0" y="16" class="st2 st3">Reconstruction</tspan></text>
+<rect x="25.3" y="265.9" class="st0" width="53" height="36"/>
+<rect x="28.5" y="267.1" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 28.5137 279.9426)"><tspan x="0" y="0" class="st2 st3">Vision </tspan><tspan x="0" y="16" class="st2 st3">Info.</tspan></text>
+<rect x="169.5" y="265.9" class="st0" width="53" height="36"/>
+<rect x="172.7" y="267.1" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 172.6759 279.9426)"><tspan x="0" y="0" class="st2 st3">Tacttile </tspan><tspan x="0" y="16" class="st2 st3">Info.</tspan></text>
+<rect x="97.5" y="265.9" class="st0" width="53" height="36"/>
+<rect x="100.7" y="267.1" class="st1" width="46.6" height="33.6"/>
+<text transform="matrix(1 0 0 1 100.6759 279.9426)"><tspan x="0" y="0" class="st2 st3">Audio </tspan><tspan x="0" y="16" class="st2 st3">Info.</tspan></text>
+<g>
+	<g>
+		<line class="st4" x1="50.5" y1="266" x2="50.5" y2="258.9"/>
+		<g>
+			<polygon class="st5" points="41.4,260.1 59.6,260.1 50.5,251 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st4" x1="123.5" y1="266" x2="123.5" y2="258.9"/>
+		<g>
+			<polygon class="st5" points="114.4,260.1 132.6,260.1 123.5,251 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st4" x1="194.5" y1="266" x2="194.5" y2="258.9"/>
+		<g>
+			<polygon class="st5" points="185.4,260.1 203.6,260.1 194.5,251 			"/>
+		</g>
+	</g>
+</g>
+<rect x="279.5" y="214.5" class="st0" width="97" height="36"/>
+<rect x="281" y="215.7" class="st1" width="94" height="33.6"/>
+<text transform="matrix(1 0 0 1 281.0001 228.4944)"><tspan x="0" y="0" class="st2 st3">Vision </tspan><tspan x="0" y="16" class="st2 st3">Reconstruction</tspan></text>
+<line class="st4" x1="327.5" y1="199.5" x2="527.5" y2="199.5"/>
+<g>
+	<g>
+		<line class="st4" x1="527.5" y1="206.6" x2="527.5" y2="199.5"/>
+		<g>
+			<polygon class="st5" points="518.4,205.4 536.6,205.4 527.5,214.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st4" x1="428.5" y1="207.1" x2="428.5" y2="185"/>
+		<g>
+			<polygon class="st5" points="419.4,205.9 437.6,205.9 428.5,215 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st6" x1="327.5" y1="206.6" x2="327.5" y2="199.5"/>
+		<g>
+			<polygon class="st5" points="318.4,205.4 336.6,205.4 327.5,214.5 			"/>
+		</g>
+	</g>
+</g>
+<rect x="300.5" y="280.6" transform="matrix(0.9999 -1.140504e-02 1.140504e-02 0.9999 -3.2943 3.5602)" class="st8" width="20" height="20"/>
+<rect x="300.7" y="280.8" transform="matrix(0.9999 -1.140504e-02 1.140504e-02 0.9999 -3.281 3.5638)" class="st1" width="20.3" height="17.3"/>
+<text transform="matrix(0.9999 -1.141000e-02 1.141000e-02 0.9999 300.7944 293.9682)" class="st2 st3"> </text>
+<text transform="matrix(0.9999 -1.141000e-02 1.141000e-02 0.9999 304.042 294.4233)" class="st7 st3">µ</text>
+<text transform="matrix(0.583 -6.652030e-03 6.652030e-03 0.583 313.3182 299.3999)" class="st7 st3">v</text>
+<rect x="331" y="281" class="st8" width="23" height="20"/>
+<rect x="331.7" y="280.7" class="st1" width="20.3" height="17.3"/>
+<text transform="matrix(1 0 0 1 331.6759 293.9866)" class="st7 st3">σ</text>
+<text transform="matrix(0.583 0 0 0.583 340.3009 299.3147)" class="st7 st3">v</text>
+<text transform="matrix(1 0 0 1 344.441 293.9866)" class="st7 st3">2</text>
+<line class="st4" x1="326.5" y1="250.5" x2="326.5" y2="258.5"/>
+<g>
+	<g>
+		<line class="st9" x1="309.5" y1="258.5" x2="310.1" y2="272.6"/>
+		<g>
+			<polygon class="st5" points="319.2,271 301,271.8 310.5,280.5 			"/>
+		</g>
+	</g>
+</g>
+<rect x="402.5" y="280.6" transform="matrix(0.9999 -1.140504e-02 1.140504e-02 0.9999 -3.2876 4.7235)" class="st8" width="20" height="20"/>
+<rect x="402.7" y="280.8" transform="matrix(0.9999 -1.140504e-02 1.140504e-02 0.9999 -3.2744 4.7271)" class="st1" width="20.3" height="17.3"/>
+<text transform="matrix(0.9999 -1.141000e-02 1.141000e-02 0.9999 402.7944 293.9682)" class="st2 st3"> </text>
+<text transform="matrix(0.9999 -1.141000e-02 1.141000e-02 0.9999 406.042 294.4233)" class="st7 st3">µ</text>
+<text transform="matrix(0.583 -6.652030e-03 6.652030e-03 0.583 415.3181 299.3999)" class="st7 st3">a</text>
+<rect x="432.5" y="280.5" class="st8" width="23" height="20"/>
+<rect x="433.7" y="280.7" class="st1" width="20.3" height="17.3"/>
+<text transform="matrix(1 0 0 1 433.6759 293.9866)" class="st7 st3">σ</text>
+<text transform="matrix(0.583 0 0 0.583 442.3009 299.3147)" class="st7 st3">a</text>
+<text transform="matrix(1 0 0 1 446.965 293.9866)" class="st7 st3">2</text>
+<rect x="501.5" y="280.6" transform="matrix(0.9999 -1.140504e-02 1.140504e-02 0.9999 -3.2812 5.8526)" class="st8" width="20" height="20"/>
+<rect x="501.7" y="280.8" transform="matrix(0.9999 -1.140504e-02 1.140504e-02 0.9999 -3.2679 5.8562)" class="st1" width="20.3" height="17.3"/>
+<text transform="matrix(0.9999 -1.141000e-02 1.141000e-02 0.9999 501.7944 293.9682)" class="st2 st3"> </text>
+<text transform="matrix(0.9999 -1.141000e-02 1.141000e-02 0.9999 505.042 294.4233)" class="st7 st3">µ</text>
+<text transform="matrix(0.583 -6.652030e-03 6.652030e-03 0.583 514.3182 299.3999)" class="st7 st3">t</text>
+<rect x="531.5" y="280.5" class="st8" width="23" height="20"/>
+<rect x="532.7" y="280.7" class="st1" width="20.3" height="17.3"/>
+<text transform="matrix(1 0 0 1 532.6759 293.9866)" class="st7 st3">σ</text>
+<text transform="matrix(0.583 0 0 0.583 541.3009 299.3147)" class="st7 st3">t</text>
+<text transform="matrix(1 0 0 1 543.8927 293.9866)" class="st7 st3">2</text>
+<rect x="381.5" y="214.5" class="st0" width="97" height="36"/>
+<rect x="383" y="215.7" class="st1" width="94" height="33.6"/>
+<text transform="matrix(1 0 0 1 383.0001 228.4944)"><tspan x="0" y="0" class="st2 st3">Audio </tspan><tspan x="0" y="16" class="st2 st3">Reconstruction</tspan></text>
+<rect x="482.5" y="214.5" class="st0" width="97" height="36"/>
+<rect x="484" y="215.7" class="st1" width="94" height="33.6"/>
+<text transform="matrix(1 0 0 1 484.0001 228.4944)"><tspan x="0" y="0" class="st2 st3">Tacttile</tspan><tspan x="0" y="16" class="st2 st3">Reconstruction</tspan></text>
+<line class="st4" x1="310" y1="258.5" x2="342" y2="258.5"/>
+<g>
+	<g>
+		<line class="st4" x1="342.5" y1="258.5" x2="342.5" y2="272.6"/>
+		<g>
+			<polygon class="st5" points="351.6,271.4 333.4,271.4 342.5,280.5 			"/>
+		</g>
+	</g>
+</g>
+<line class="st4" x1="429.5" y1="249.5" x2="429.5" y2="257.5"/>
+<g>
+	<g>
+		<line class="st9" x1="412.5" y1="257.5" x2="413.1" y2="271.6"/>
+		<g>
+			<polygon class="st5" points="422.2,270 404,270.8 413.5,279.5 			"/>
+		</g>
+	</g>
+</g>
+<line class="st4" x1="413" y1="257.5" x2="445" y2="257.5"/>
+<g>
+	<g>
+		<line class="st4" x1="445.5" y1="257.5" x2="445.5" y2="271.6"/>
+		<g>
+			<polygon class="st5" points="454.6,270.4 436.4,270.4 445.5,279.5 			"/>
+		</g>
+	</g>
+</g>
+<line class="st4" x1="528.5" y1="251.5" x2="528.5" y2="259.5"/>
+<g>
+	<g>
+		<line class="st9" x1="511.5" y1="259.5" x2="512.1" y2="273.6"/>
+		<g>
+			<polygon class="st5" points="521.2,272 503,272.8 512.5,281.5 			"/>
+		</g>
+	</g>
+</g>
+<line class="st4" x1="512" y1="259.5" x2="544" y2="259.5"/>
+<g>
+	<g>
+		<line class="st4" x1="544.5" y1="259.5" x2="544.5" y2="273.6"/>
+		<g>
+			<polygon class="st5" points="553.6,272.4 535.4,272.4 544.5,281.5 			"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -4,7 +4,15 @@ import { InView } from "react-intersection-observer";
 import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
 import { Email } from "../common/Email";
-import { researchStaffs, visitingResearchers, administrativeStaffs, phdStudents, masterStudents, undergraduateStudents, alumni } from "../../data/team";
+import {
+  researchStaffs,
+  visitingResearchers,
+  administrativeStaffs,
+  phdStudents,
+  masterStudents,
+  undergraduateStudents,
+  alumni,
+} from "../../data/team";
 import styles from "./Team.module.css";
 
 type Props = {
@@ -27,7 +35,9 @@ const Team = ({ lang = "ja" }: Props) => {
         <div className={styles.container}>
           <InView
             as="section"
-            onChange={(inView) => onChangeIntersection(inView, "researchStaffs")}
+            onChange={(inView) =>
+              onChangeIntersection(inView, "researchStaffs")
+            }
             className={styles.section}
             id="researchStaffs"
             threshold={0.5}
@@ -35,13 +45,19 @@ const Team = ({ lang = "ja" }: Props) => {
             <h2 className={styles.sectionTitle}>Research Staffs</h2>
             <div className={styles.sectionContents}>
               <div className={styles.professors}>
-                {researchStaffs.slice(0, 2).map(member => (
+                {researchStaffs.slice(0, 2).map((member) => (
                   <div>
-                    <figure className={styles.img}><img src={member.imgUrl} alt="" /></figure>
+                    <figure className={styles.img}>
+                      <img src={member.imgUrl} alt="" />
+                    </figure>
                     <p className={styles.professorTitle}>{member.title}</p>
                     <h3 className={styles.professorName}>{member.name}</h3>
-                    <p className={styles.email}><Email email={member.email} /></p>
-                    <p className={styles.professorDescription}>{member.description}</p>
+                    <p className={styles.email}>
+                      <Email email={member.email} />
+                    </p>
+                    <p className={styles.professorDescription}>
+                      {member.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -54,7 +70,9 @@ const Team = ({ lang = "ja" }: Props) => {
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
-                      <p className={styles.email}><Email email={member.email} /></p>
+                      <p className={styles.email}>
+                        <Email email={member.email} />
+                      </p>
                       <p className={styles.description}>{member.description}</p>
                     </div>
                   );
@@ -64,7 +82,9 @@ const Team = ({ lang = "ja" }: Props) => {
           </InView>
           <InView
             as="section"
-            onChange={(inView) => onChangeIntersection(inView, "visitingResearchers")}
+            onChange={(inView) =>
+              onChangeIntersection(inView, "visitingResearchers")
+            }
             className={styles.section}
             id="visitingResearchers"
             threshold={0.5}
@@ -80,7 +100,9 @@ const Team = ({ lang = "ja" }: Props) => {
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
-                      <p className={styles.email}><Email email={member.email} /></p>
+                      <p className={styles.email}>
+                        <Email email={member.email} />
+                      </p>
                       <p className={styles.description}>{member.description}</p>
                     </div>
                   );
@@ -90,7 +112,9 @@ const Team = ({ lang = "ja" }: Props) => {
           </InView>
           <InView
             as="section"
-            onChange={(inView) => onChangeIntersection(inView, "administrativeStaffs")}
+            onChange={(inView) =>
+              onChangeIntersection(inView, "administrativeStaffs")
+            }
             className={styles.section}
             id="administrativeStaffs"
             threshold={0.5}
@@ -106,7 +130,9 @@ const Team = ({ lang = "ja" }: Props) => {
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
-                      <p className={styles.email}><Email email={member.email} /></p>
+                      <p className={styles.email}>
+                        <Email email={member.email} />
+                      </p>
                     </div>
                   );
                 })}
@@ -131,8 +157,12 @@ const Team = ({ lang = "ja" }: Props) => {
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
-                      <p className={styles.email}><Email email={member.email} /></p>
-                      <p className={styles.studentDescription}>{member.description}</p>
+                      <p className={styles.email}>
+                        <Email email={member.email} />
+                      </p>
+                      <p className={styles.studentDescription}>
+                        {member.description}
+                      </p>
                     </div>
                   );
                 })}
@@ -141,7 +171,9 @@ const Team = ({ lang = "ja" }: Props) => {
           </InView>
           <InView
             as="section"
-            onChange={(inView) => onChangeIntersection(inView, "masterStudents")}
+            onChange={(inView) =>
+              onChangeIntersection(inView, "masterStudents")
+            }
             className={styles.section}
             id="masterStudents"
             threshold={0.5}
@@ -157,7 +189,9 @@ const Team = ({ lang = "ja" }: Props) => {
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
-                      <p className={styles.studentDescription}>{member.description}</p>
+                      <p className={styles.studentDescription}>
+                        {member.description}
+                      </p>
                     </div>
                   );
                 })}
@@ -166,7 +200,9 @@ const Team = ({ lang = "ja" }: Props) => {
           </InView>
           <InView
             as="section"
-            onChange={(inView) => onChangeIntersection(inView, "undergraduateStudents")}
+            onChange={(inView) =>
+              onChangeIntersection(inView, "undergraduateStudents")
+            }
             className={styles.section}
             id="undergraduateStudents"
             threshold={0.5}
@@ -196,27 +232,27 @@ const Team = ({ lang = "ja" }: Props) => {
             threshold={0.5}
           >
             <h2 className={styles.sectionTitle}>Alumni</h2>
-              <div className={styles.alumni}>
-                {alumni.map((item) => {
-                  return (
-                    <section className={styles.yearSection} key={item.year}>
-                      <h3 className={styles.alumniYear}>{item.year}</h3>
-                      <div className={styles.degreeSectionWrapper}>
-                        {item.members.map(m => (
-                          <section className={styles.degreeSection}>
-                            <h4 className={styles.alumniDegree}>{m.degree}</h4>
-                            <ul className={styles.alumniList}>
-                              {m.list.map(l => (
-                                <li className={styles.alumniName}>{l}</li>
-                              ))}
-                            </ul>
-                          </section>
-                        ))}
-                      </div>
-                    </section>
-                  );
-                })}
-              </div>
+            <div className={styles.alumni}>
+              {alumni.map((item) => {
+                return (
+                  <section className={styles.yearSection} key={item.year}>
+                    <h3 className={styles.alumniYear}>{item.year}</h3>
+                    <div className={styles.degreeSectionWrapper}>
+                      {item.members.map((m) => (
+                        <section className={styles.degreeSection}>
+                          <h4 className={styles.alumniDegree}>{m.degree}</h4>
+                          <ul className={styles.alumniList}>
+                            {m.list.map((l) => (
+                              <li className={styles.alumniName}>{l}</li>
+                            ))}
+                          </ul>
+                        </section>
+                      ))}
+                    </div>
+                  </section>
+                );
+              })}
+            </div>
           </InView>
         </div>
         <aside className={styles.side}>

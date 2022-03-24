@@ -27,7 +27,7 @@
 }
 
 .sectionTitle::before {
-  content: '';
+  content: "";
   width: 1rem;
   height: 1rem;
   background-color: var(--primary-red);
@@ -151,7 +151,7 @@
 }
 
 .alumniName:not(:first-child)::before {
-  content: '/';
+  content: "/";
 }
 
 .side {

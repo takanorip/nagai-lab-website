@@ -264,7 +264,16 @@ export const alumni = [
     members: [
       {
         degree: "Doctor",
-        list: ["Kazuma Obata", "Kazuma Obata", "Kazuma Obata", "Kazuma Obata", "Kazuma Obata", "Kazuma Obata", "Kazuma Obata", "Kazuma Obata"],
+        list: [
+          "Kazuma Obata",
+          "Kazuma Obata",
+          "Kazuma Obata",
+          "Kazuma Obata",
+          "Kazuma Obata",
+          "Kazuma Obata",
+          "Kazuma Obata",
+          "Kazuma Obata",
+        ],
       },
       {
         degree: "Master",
@@ -309,5 +318,5 @@ export const alumni = [
         list: ["Kazuma Obata", "Kazuma Obata", "Kazuma Obata"],
       },
     ],
-  }
+  },
 ];

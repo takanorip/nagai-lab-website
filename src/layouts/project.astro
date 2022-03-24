@@ -1,0 +1,19 @@
+---
+import Head from '../components/common/Head.astro';
+import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
+import Project from '../components/research/Project';
+const { content } = Astro.props;
+---
+<html lang="ja">
+<head>
+  <Head title={`${content.title} | 大阪大学基礎工学研究科 長井研究室`} />
+</head>
+<body>
+  <Header location="research" />
+  <Project title={content.title} mainVisualUrl={content.mainVisualUrl} author={content.author} mainPublications={content.mainPublications}>
+    <slot />
+  </Project>
+  <Footer />
+</body>
+</html>
