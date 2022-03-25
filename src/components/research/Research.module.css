@@ -117,13 +117,19 @@
   gap: var(--spacing-2);
 }
 
+.topics li {
+  display: flex;
+  align-items: stretch;
+}
+
 .topicLink {
   color: var(--body-black);
   text-decoration: none;
   border-radius: var(--border-radius-default);
   border: 1px solid var(--border);
   overflow: hidden;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .topicLink:hover {
@@ -138,7 +144,7 @@
 
 .topicImg img {
   width: 100%;
-  height: 10rem;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
@@ -148,6 +154,7 @@
   display: flex;
   align-items: center;
   min-height: 5rem;
+  height: 100%;
 }
 
 .side {

@@ -1,6 +1,5 @@
 ---
 title: サービスロボットによる「おもてなし」の実現
-mainVisualUrl: /assets/projects/gacho_h29/haikei.jpg
 author: 裴雅超 (Yachao Pei)
 thumbnail: gacho_h29.jpg
 year: 2017

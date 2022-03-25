@@ -3,6 +3,7 @@ title: 家庭用ロボットの自律化に向けた動作の学習
 subTitle: 遠隔操作から動作を学習するロボット
 mainVisualUrl: /assets/projects/minamisaka_h29/haikei.jpg
 author: 南坂 雅人 (Masato Minamisaka)
+year: 2017
 thumbnail: minamisaka_h29.jpg
 layout: ../../layouts/project.astro
 ---
@@ -19,7 +20,7 @@ layout: ../../layouts/project.astro
 そこで自動車の行動を予測することで現状の ADAS よりも早いタイミングで警告、操作をすることができるようになり、さらなる負担、事故軽減が可能になると考えられる。
 
 ![](/assets/projects/minamisaka_h29/toyota_safety_sense.png)
-*交通事故総合分析センター(ITARDA)の事故データをもとにトヨタが独自に算出(2017)*
+_交通事故総合分析センター(ITARDA)の事故データをもとにトヨタが独自に算出(2017)_
 
 ## PredNet とは
 
@@ -30,10 +31,10 @@ PredNet とは神経科学で大脳皮質における予測符号化の概念に
 予測符号化(predictive coding)とは人間の脳における 1 つの仮定で、脳に入ってくる感覚刺激の近い将来の予測を絶えず行っているというものである。神経科学分野においても一定の支持を得ている。
 
 ![](/assets/projects/minamisaka_h29/predict_coding_image.png)
-*予測符号化*
+_予測符号化_
 
 ![](/assets/projects/minamisaka_h29/prednet.png)
-*PredNet*
+_PredNet_
 
 ## 提案モデル
 
@@ -44,7 +45,7 @@ PredNet とは神経科学で大脳皮質における予測符号化の概念に
 準備中
 
 ![](/assets/projects/minamisaka_h29/MPN.png)
-*提案モデル*
+_提案モデル_
 
 ## データセット
 
@@ -53,10 +54,10 @@ PredNet とは神経科学で大脳皮質における予測符号化の概念に
 ![](/assets/projects/minamisaka_h29/dataset_ex1.png)
 ![](/assets/projects/minamisaka_h29/dataset_ex2.png)
 ![](/assets/projects/minamisaka_h29/dataset_ex3.png)
-*動画像例*
+_動画像例_
 
 ![](/assets/projects/minamisaka_h29/sensor.svg)
-*センサ例*
+_センサ例_
 
 ### データセット詳細
 
