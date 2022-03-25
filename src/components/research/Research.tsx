@@ -115,12 +115,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
                 <li className={styles.topic}>
                   <a className={styles.topicLink} href={t.url}>
                     <figure className={styles.topicImg}>
-                      <img
-                        src={
-                          "/assets/thumbnails/" + t.url.split("/")[2] + ".jpg"
-                        }
-                        alt=""
-                      />
+                      <img src={"/assets/thumbnails/" + t.thumbnail} alt="" />
                     </figure>
                     <p className={styles.topicTitle}>{t.title}</p>
                   </a>

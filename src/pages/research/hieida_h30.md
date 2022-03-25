@@ -2,6 +2,7 @@
 title: 社会的感情獲得へ向けた感情モデルの構築
 mainVisualUrl: /assets/projects/hieida_h30/haikei.jpg
 author: 日永田 智絵 (Chie Hieida)
+thumbnail: hieida_h30.jpg
 mainPublications:
   - 'Chie Hieida, Takato Horii and Takayuki Nagai, "Toward Empathic Communication: Emotion Differentiation Via Face-To-Face Interaction in Generative Model of Emotion," The 8th Joint IEEE International Conference on Development and Learning and on Epigenetic Robotics 2018, ICDL2018'
   - Chie Hieida, Takato Horii, and Takayuki Nagai, "Emotion Differentiation based on Decision-Making in Emotion Model," IEEE International Conference on Robot and Human Interactive Communication, pp.659-665, Nanjing, China, August 27-31, 2018

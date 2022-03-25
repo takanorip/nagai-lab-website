@@ -2,6 +2,7 @@
 title: 身体操作則と環境の相互学習モデルの構築
 subTitle: 幼児発達過程の理解に向けた構成的アプローチ
 author: 青木　達哉 (Tatsuya Aoki)
+thumbnail: aoki_h29.jpg
 year: 2017
 layout: ../../layouts/project.astro
 ---

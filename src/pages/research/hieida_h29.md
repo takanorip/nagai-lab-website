@@ -2,6 +2,7 @@
 title: 社会的感情獲得のための感情モデル
 mainVisualUrl: /assets/projects/hieida_h29/haikei.jpg
 author: 日永田 智絵 (Chie Hieida)
+thumbnail: hieida_h29.jpg
 mainPublications:
   - 日永田智絵, 長井隆行, "共感コミュニケーションに向けた感情モデルの提案", HAIシンポジウム2016, P-10, 2016.12.03 HAI-2016 Impressive Poster Award
   - 日永田智絵, 長井隆行, "人－ロボットコミュニケーションのための感情生成モデルの提案", 3D2-OS-37b-1, 第31回人工知能学会全国大会, 2017.05
