@@ -2,7 +2,7 @@ import React from "react";
 import cx from "classnames";
 import { ArrowUpRight } from "../common/icons/ArrowUpRight";
 import styles from "./NewsCard.module.css";
-import { useBudouX } from '../../utils/useBudoux'
+import { useBudouX } from "../../utils/useBudoux";
 
 type Props = {
   date: string;

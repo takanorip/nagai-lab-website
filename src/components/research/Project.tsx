@@ -5,7 +5,7 @@ import "/node_modules/swiper/swiper.min.css";
 import Main from "../common/Main";
 import styles from "./Project.module.css";
 import "./Slide.css";
-import { useBudouX } from '../../utils/useBudoux'
+import { useBudouX } from "../../utils/useBudoux";
 
 type Props = {
   title: string;

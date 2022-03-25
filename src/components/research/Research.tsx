@@ -7,7 +7,7 @@ import Select from "../common/Select";
 import { projects } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
-import { useBudouX } from '../../utils/useBudoux'
+import { useBudouX } from "../../utils/useBudoux";
 
 type Props = {
   topics: any;
