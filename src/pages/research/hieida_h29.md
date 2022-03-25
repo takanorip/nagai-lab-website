@@ -2,7 +2,7 @@
 title: 社会的感情獲得のための感情モデル
 mainVisualUrl: /assets/projects/hieida_h29/haikei.jpg
 author: 日永田 智絵 (Chie Hieida)
-mainPublications: 
+mainPublications:
   - 日永田智絵, 長井隆行, "共感コミュニケーションに向けた感情モデルの提案", HAIシンポジウム2016, P-10, 2016.12.03 HAI-2016 Impressive Poster Award
   - 日永田智絵, 長井隆行, "人－ロボットコミュニケーションのための感情生成モデルの提案", 3D2-OS-37b-1, 第31回人工知能学会全国大会, 2017.05
   - Chie Hieida,Takayuki Nagai, "A Model of Emotion for Empathic Communication", The 12th ACM/IEEE International Conference on Human-Robot Interaction (HRI2017), pp.133-134, March 6-9, 2017
@@ -34,7 +34,7 @@ layout: ../../layouts/project.astro
 第 1 層は反射的に反応する層であり，時間的に処理が最も早いが，エラーも多くなる．それに対し，第 2 層では過去の記憶にアクセスするため，第 1 層からの遅延はあるが，経験に基づいて評価するため，エラーを減らすことができる．この 1 層 2 層から出力された一次表出を次元圧縮したものが情動と定義している．こうして得られた情動と入力信号を使って原因推論をし，未来予測を行う．未来予測の結果を使って最適な行動を出力する．このときの情報がカテゴリとして意識へと昇ったものが感情として認知される．
 
 ![提案する感情モデルの図](/assets/projects/hieida_h29/model_web_en2.png)
-*提案する感情モデル*
+_提案する感情モデル_
 
 ## 一層目の実装
 
@@ -59,7 +59,7 @@ Mini-batch 法，batch size 100，2000epoch，アテンション回数 10
 テストセットを入力とした出力は正解データとモデルデータの誤差が arousal:0.48，valence:0.46 であり，個人差程度の誤差であった． また，学習したアテンションは人の顔や黄色などの明るい色，またはエッジを良く見る傾向がみられた．
 
 ![Recurrent Attention Modelの図](/assets/projects/hieida_h29/RAM.png)
-*Recurrent Attention Model*
+_Recurrent Attention Model_
 
 ## 情動反応の検証
 

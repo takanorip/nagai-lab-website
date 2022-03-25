@@ -14,5 +14,8 @@
     "classnames": "^2.3.1",
     "react-intersection-observer": "^8.33.1",
     "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "dependencies": {
+    "swiper": "^8.0.7"
   }
 }

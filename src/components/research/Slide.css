@@ -1,0 +1,19 @@
+.swiper-pagination-progressbar {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--border);
+}
+
+.swiper-pagination-progressbar-fill {
+  background: var(--primary-red);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: left top;
+}

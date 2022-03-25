@@ -11,7 +11,14 @@ const { content } = Astro.props;
 </head>
 <body>
   <Header location="research" />
-  <Project title={content.title} mainVisualUrl={content.mainVisualUrl} author={content.author} mainPublications={content.mainPublications}>
+  <Project
+    client:load
+    title={content.title}
+    mainVisualUrl={content.mainVisualUrl}
+    author={content.author}
+    mainPublications={content.mainPublications}
+    slideImages={content.slideImages}
+  >
     <slot />
   </Project>
   <Footer />
