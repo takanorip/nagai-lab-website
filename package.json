@@ -16,6 +16,7 @@
     "typescript-plugin-css-modules": "^3.4.0"
   },
   "dependencies": {
+    "budoux": "^0.0.3",
     "swiper": "^8.0.7"
   }
 }

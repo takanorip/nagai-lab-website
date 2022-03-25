@@ -7,6 +7,7 @@ import Select from "../common/Select";
 import { projects } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
+import { useBudouX } from '../../utils/useBudoux'
 
 type Props = {
   topics: any;
@@ -117,7 +118,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
                     <figure className={styles.topicImg}>
                       <img src={"/assets/thumbnails/" + t.thumbnail} alt="" />
                     </figure>
-                    <p className={styles.topicTitle}>{t.title}</p>
+                    <p className={styles.topicTitle}>{useBudouX(t.title)}</p>
                   </a>
                 </li>
               ))}

@@ -5,6 +5,7 @@ import "/node_modules/swiper/swiper.min.css";
 import Main from "../common/Main";
 import styles from "./Project.module.css";
 import "./Slide.css";
+import { useBudouX } from '../../utils/useBudoux'
 
 type Props = {
   title: string;
@@ -38,9 +39,9 @@ const Project: FC<Props> = ({
     <Main>
       <div className={styles.project}>
         <h1 className={styles.title}>
-          {title}
+          {useBudouX(title)}
           {subTitle ? (
-            <span className={styles.subTitle}>{subTitle}</span>
+            <span className={styles.subTitle}>{useBudouX(subTitle)}</span>
           ) : null}
         </h1>
         {mainVisualUrl && (
