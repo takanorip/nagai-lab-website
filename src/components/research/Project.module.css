@@ -21,7 +21,7 @@
 
 .content img ~ em {
   display: block;
-  margin: 0 auto;
+  margin: var(--spacing-1) auto 0;
   line-height: 1.5;
   text-align: center;
   color: var(--dark-gray);
@@ -59,7 +59,7 @@
 
 .content ul,
 .content ol {
-  padding-left: var(--spacing-3);
+  padding-left: var(--spacing-5);
   margin: var(--spacing-3) 0 var(--spacing-3);
   list-style: none;
   display: flex;
@@ -105,7 +105,8 @@
   overflow: auto;
 }
 
-.content td, .content th {
+.content td,
+.content th {
   padding: var(--spacing-05);
   border: 1px solid var(--border);
   background: var(--white);
@@ -121,6 +122,17 @@
   margin: var(--spacing-3) auto;
   background-color: var(--background-gray);
   border-radius: var(--border-radius-small);
+}
+
+.content code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  padding: var(--spacing-0) var(--spacing-1);
+  margin: 0 var(--spacing-0);
+  background-color: var(--background-gray);
+  border-radius: var(--border-radius-small);
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.85em;
 }
 
 .content iframe {
@@ -186,6 +198,7 @@
   font-size: var(--font-size-default);
   font-weight: bold;
   color: var(--dark-gray);
+  margin-bottom: var(--spacing-0);
 }
 
 .mainPublications {
