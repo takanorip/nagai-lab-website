@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "/node_modules/swiper/swiper.min.css";
 import Main from "../common/Main";
+import Button from "../common/Button";
 import styles from "./Project.module.css";
 import "./Slide.css";
 import { useBudouX } from "../../utils/useBudoux";
@@ -137,6 +138,9 @@ const Project: FC<Props> = ({
               </ul>
             </div>
           )}
+        </div>
+        <div className={styles.backToList}>
+          <Button type={'outlined'} href="/research#topics">Back to list</Button>
         </div>
       </div>
     </Main>

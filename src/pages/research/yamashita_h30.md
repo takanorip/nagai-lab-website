@@ -1,9 +1,9 @@
 ---
 title: 子どもの集団行動の定量的解析
 subTitle: 統合情報理論による行動解析に向けた足がかり
-mainVisualUrl: /assets/projects/yamashita_h29/haikei.jpg
+mainVisualUrl: /assets/projects/yamashita_h29/haikei.jpeg
 author: 山下 舜人 (Shunto Yamashita)
-thumbnail: Yamashita_h30.jpg
+thumbnail: yamashita_h30.jpg
 mainPublications:
   - 山下舜人，堀井隆斗，北園淳，大泉匡史，長井隆行, "統合情報理論を用いた子どもの行動解析―年齢の変化に伴う集団形成の変化と一体感の定量化に向けて―", 日本赤ちゃん学会第18回学術集会, P-110, 2018.7.7, 東京
 current: true

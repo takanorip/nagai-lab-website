@@ -17,7 +17,12 @@
   background-color: var(--primary-red);
 }
 
-.link:hover {
+.link.normal:hover {
   color: var(--primary-red);
   background-color: var(--white);
+}
+
+.link.outlined:hover {
+  color: var(--white);
+  background-color: var(--primary-red);
 }

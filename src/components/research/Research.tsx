@@ -4,6 +4,7 @@ import { InView } from "react-intersection-observer";
 import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
 import Select from "../common/Select";
+import Button from "../common/Button";
 import { projects } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
@@ -97,6 +98,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
                 </li>
               ))}
             </ul>
+            <Button href="/publication/">View All Publications</Button>
           </InView>
           <InView
             as="section"
