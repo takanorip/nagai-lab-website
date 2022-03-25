@@ -3,6 +3,8 @@ import Head from '../../components/common/Head.astro';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Research from '../../components/research/Research';
+const data = await Astro.fetchContent('../../pages/research/*.md');
+const topicsData = data.sort((a, b) => b.year - a.year)
 ---
 <html lang="ja">
 <head>
@@ -10,7 +12,7 @@ import Research from '../../components/research/Research';
 </head>
 <body>
   <Header location="research" />
-  <Research client:load />
+  <Research topics={topicsData} client:load />
   <Footer />
 </body>
 </html>

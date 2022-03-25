@@ -6,6 +6,7 @@ mainPublications:
   - 日永田智絵, 長井隆行, "共感コミュニケーションに向けた感情モデルの提案", HAIシンポジウム2016, P-10, 2016.12.03 HAI-2016 Impressive Poster Award
   - 日永田智絵, 長井隆行, "人－ロボットコミュニケーションのための感情生成モデルの提案", 3D2-OS-37b-1, 第31回人工知能学会全国大会, 2017.05
   - Chie Hieida,Takayuki Nagai, "A Model of Emotion for Empathic Communication", The 12th ACM/IEEE International Conference on Human-Robot Interaction (HRI2017), pp.133-134, March 6-9, 2017
+year: 2017
 layout: ../../layouts/project.astro
 ---
 

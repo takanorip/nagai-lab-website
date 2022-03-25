@@ -60,10 +60,6 @@
   border-color: var(--primary-red);
 }
 
-.content:hover .contentRight {
-  background-color: var(--background-red);
-}
-
 .contentImg {
   padding: var(--spacing-5);
   border-right: 1px solid var(--border);
@@ -133,7 +129,6 @@
 .topicLink:hover {
   color: var(--primary-red);
   border-color: var(--primary-red);
-  background-color: var(--background-red);
 }
 
 .topicImg {

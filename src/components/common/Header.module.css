@@ -61,14 +61,14 @@
   border-radius: 0.5rem;
 }
 
-.menuItem.active a {
-  background-color: var(--primary-red);
-  color: var(--white);
-  pointer-events: none;
-}
-
 .menuItem a:hover {
   background-color: var(--background-red);
+}
+
+.menuItem.active a,
+.menuItem.active a:hover {
+  background-color: var(--primary-red);
+  color: var(--white);
 }
 
 .langSwitch {

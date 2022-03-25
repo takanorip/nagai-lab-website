@@ -1,13 +1,14 @@
 import React, { FC, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import "swiper/css";
+import "/node_modules/swiper/swiper.min.css";
 import Main from "../common/Main";
 import styles from "./Project.module.css";
 import "./Slide.css";
 
 type Props = {
   title: string;
+  subTitle: string;
   mainVisualUrl?: string;
   author: string;
   mainPublications?: string[];
@@ -17,6 +18,7 @@ type Props = {
 const Project: FC<Props> = ({
   children,
   title,
+  subTitle,
   mainVisualUrl,
   author,
   mainPublications,
@@ -35,7 +37,12 @@ const Project: FC<Props> = ({
   return (
     <Main>
       <div className={styles.project}>
-        <h1 className={styles.title}>{title}</h1>
+        <h1 className={styles.title}>
+          {title}
+          {subTitle ? (
+            <span className={styles.subTitle}>{subTitle}</span>
+          ) : null}
+        </h1>
         {mainVisualUrl && (
           <figure className={styles.mainVisual}>
             <img src={mainVisualUrl} alt="" />
@@ -57,9 +64,8 @@ const Project: FC<Props> = ({
               pagination={{
                 type: "progressbar",
               }}
-              navigation={true}
               modules={[Pagination]}
-              className={styles.slide}
+              className="slide"
             >
               {slideImages.map((image) => (
                 <SwiperSlide key={image}>
@@ -120,16 +126,16 @@ const Project: FC<Props> = ({
             <span>Author</span>
             {author}
           </p>
-          <div className={styles.mainPublications}>
-            <p className={styles.mainPublicationsTitle}>Main Publications</p>
-            {mainPublications && (
+          {mainPublications && (
+            <div className={styles.mainPublications}>
+              <p className={styles.mainPublicationsTitle}>Main Publications</p>
               <ul className={styles.mainPublicationsList}>
                 {mainPublications.map((item) => (
                   <li>{item}</li>
                 ))}
               </ul>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </Main>

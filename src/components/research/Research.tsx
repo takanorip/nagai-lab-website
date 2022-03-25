@@ -4,11 +4,12 @@ import { InView } from "react-intersection-observer";
 import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
 import Select from "../common/Select";
-import { projects, topics } from "../../data/research";
+import { projects } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
 
 type Props = {
+  topics: any;
   lang?: "en" | "ja";
 };
 
@@ -18,23 +19,23 @@ const selectedPapers = publications
   .flat()
   .filter((item) => item.selected === true);
 
-const filter = (type: "" | "previous" | "current") => {
-  if (type === "") {
-    return topics;
-  }
-  if (type === "previous") {
-    return topics.filter((t) => !t.current);
-  }
-  if (type === "current") {
-    return topics.filter((t) => t.current);
-  }
-  return topics;
-};
-
-const Research = ({ lang = "ja" }: Props) => {
+const Research = ({ lang = "ja", topics }: Props) => {
   const [currentSection, setCurrentSection] = useState("project");
   const [selectedValue, setSelectedValue] = useState("");
   const [filteredTopics, setFilteredTopics] = useState(topics);
+
+  const filter = (type: "" | "previous" | "current") => {
+    if (type === "") {
+      return topics;
+    }
+    if (type === "previous") {
+      return topics.filter((t) => !t.current);
+    }
+    if (type === "current") {
+      return topics.filter((t) => t.current);
+    }
+    return topics;
+  };
 
   const onChangeIntersection = (inView: boolean, sectionName: string) => {
     if (inView && currentSection !== sectionName) {
@@ -114,7 +115,12 @@ const Research = ({ lang = "ja" }: Props) => {
                 <li className={styles.topic}>
                   <a className={styles.topicLink} href={t.url}>
                     <figure className={styles.topicImg}>
-                      <img src={"/assets/" + t.imgUrl} alt="" />
+                      <img
+                        src={
+                          "/assets/thumbnails/" + t.url.split("/")[2] + ".jpg"
+                        }
+                        alt=""
+                      />
                     </figure>
                     <p className={styles.topicTitle}>{t.title}</p>
                   </a>

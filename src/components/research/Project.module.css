@@ -1,6 +1,6 @@
 .project {
   width: 100%;
-  max-width: 928px;
+  max-width: 768px;
   margin: 0 auto;
   padding: var(--spacing-13) var(--spacing-3);
 }
@@ -8,7 +8,6 @@
 .content img {
   display: block;
   width: 100%;
-  max-width: 640px;
   margin: auto;
 }
 
@@ -36,6 +35,8 @@
 .content h2 {
   font-size: var(--font-size-large);
   margin: var(--spacing-8) 0 var(--spacing-2);
+  padding-bottom: var(--spacing-1);
+  border-bottom: 1px solid var(--border);
 }
 
 .content h3 {
@@ -48,9 +49,34 @@
   margin: var(--spacing-3) 0 var(--spacing-1);
 }
 
+.content ul,
+.content ol {
+  padding-left: var(--spacing-3);
+  margin: var(--spacing-3) 0 var(--spacing-3);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.content ul > li {
+  list-style: disc;
+}
+
+.content ul > li::marker {
+  font-size: 0.8em;
+}
+
+.content ol > li {
+  list-style: decimal;
+}
+
+.content ol > li::marker {
+  letter-spacing: 2.5px;
+}
+
 .content iframe {
   width: 100%;
-  max-width: 640px;
   aspect-ratio: 16 / 9;
   margin: var(--spacing-3) auto;
   display: block;
@@ -61,9 +87,6 @@
   font-size: var(--font-size-h3);
   font-weight: normal;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-5);
   align-items: center;
   margin-bottom: var(--spacing-8);
 }
@@ -75,11 +98,18 @@
   height: 0.25rem;
   border-radius: 0.25rem;
   background-color: var(--primary-red);
+  margin: var(--spacing-5) auto 0;
+}
+
+.subTitle {
+  font-size: var(--font-size-large);
+  color: var(--dark-gray);
+  display: block;
+  margin-top: var(--spacing-2);
 }
 
 .mainVisual {
   width: 100%;
-  max-width: 640px;
   margin: 0 auto var(--spacing-8);
   line-height: 0;
 }
@@ -132,7 +162,6 @@
   border-radius: var(--border-radius-default);
   overflow: hidden;
   margin-top: var(--spacing-8);
-  border: 1px solid var(--border);
 }
 
 .slideImage {

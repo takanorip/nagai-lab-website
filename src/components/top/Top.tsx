@@ -248,7 +248,7 @@ const Top = ({ lang = "ja" }: Props) => {
           </p>
           <ul className={styles.researchList}>
             <li className={styles.researchItem}>
-              <a href={`/${lang === "en" && `en/`}research#projects`}>
+              <a href={`/${lang === "en" ? `en/` : ""}research/#projects`}>
                 <p className={styles.researchItemIllust}>
                   <ProjectIllust />
                 </p>
@@ -256,7 +256,7 @@ const Top = ({ lang = "ja" }: Props) => {
               </a>
             </li>
             <li className={styles.researchItem}>
-              <a href={`/${lang === "en" && `en/`}research#equipments`}>
+              <a href={`/${lang === "en" ? `en/` : ""}research/#equipments`}>
                 <p className={styles.researchItemIllust}>
                   <EquipmentsIllust />
                 </p>
@@ -264,7 +264,7 @@ const Top = ({ lang = "ja" }: Props) => {
               </a>
             </li>
             <li className={styles.researchItem}>
-              <a href={`/${lang === "en" && `en/`}research#papers`}>
+              <a href={`/${lang === "en" ? `en/` : ""}research/#papers`}>
                 <p className={styles.researchItemIllust}>
                   <PapersIllust />
                 </p>
@@ -272,7 +272,7 @@ const Top = ({ lang = "ja" }: Props) => {
               </a>
             </li>
             <li className={styles.researchItem}>
-              <a href={`/${lang === "en" && `en/`}research#topics`}>
+              <a href={`/${lang === "en" ? `en/` : ""}research/#topics`}>
                 <p className={styles.researchItemIllust}>
                   <TopicsIllust />
                 </p>

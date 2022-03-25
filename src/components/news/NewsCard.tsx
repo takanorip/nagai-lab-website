@@ -1,4 +1,5 @@
 import React from "react";
+import cx from "classnames";
 import { ArrowUpRight } from "../common/icons/ArrowUpRight";
 import styles from "./NewsCard.module.css";
 
@@ -10,7 +11,7 @@ type Props = {
 
 const NewsCard = ({ date, title, url }: Props) => {
   return (
-    <a className={styles.card} href={url}>
+    <a className={cx(styles.card, !url && styles.noLink)} href={url}>
       <div className={styles.inner}>
         <p className={styles.date}>{date}</p>
         <p className={styles.title}>{title}</p>

@@ -10,10 +10,13 @@
   text-decoration: none;
 }
 
+.card:hover {
+  border-color: var(--primary-red);
+}
+
 .card:hover .title,
 .card:hover .icon {
   color: var(--primary-red);
-  text-decoration: underline;
 }
 
 .inner {
@@ -24,8 +27,14 @@
 
 .title {
   color: var(--body-black);
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .icon {
   color: var(--medium-gray);
+}
+
+.noLink {
+  pointer-events: none;
 }
