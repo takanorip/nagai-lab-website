@@ -207,7 +207,10 @@ const Top = ({ lang = "ja" }: Props) => {
         </div>
       </section>
       <figure className={styles.mainVisual}>
-        <img loading="lazy" src="/assets/main-visual.jpg" alt="" />
+        <picture>
+          <source srcset="/assets/main-visual.webp" type="image/webp" />
+          <img loading="lazy" src="/assets/main-visual.jpg" alt="" />
+        </picture>
       </figure>
       <section className={styles.section}>
         <div className={styles.about}>
@@ -235,7 +238,10 @@ const Top = ({ lang = "ja" }: Props) => {
             <Button href={`/${lang === "en" && `en/`}team`}>View More</Button>
           </div>
           <figure className={styles.aboutImg}>
-            <img loading="lazy" src="/assets/top-about.jpg" alt="" />
+            <picture>
+              <source srcset="/assets/top-about.webp" type="image/webp" />
+              <img loading="lazy" src="/assets/top-about.jpg" alt="" />
+            </picture>
           </figure>
         </div>
       </section>
