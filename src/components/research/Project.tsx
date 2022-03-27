@@ -47,7 +47,7 @@ const Project: FC<Props> = ({
         </h1>
         {mainVisualUrl && (
           <figure className={styles.mainVisual}>
-            <img src={mainVisualUrl} alt="" />
+            <img loading="lazy" src={mainVisualUrl} alt="" />
           </figure>
         )}
         <div className={styles.content}>{children}</div>
@@ -71,7 +71,7 @@ const Project: FC<Props> = ({
             >
               {slideImages.map((image) => (
                 <SwiperSlide key={image}>
-                  <img className={styles.slideImage} src={image} alt="" />
+                  <img loading="lazy" className={styles.slideImage} src={image} alt="" />
                 </SwiperSlide>
               ))}
             </Swiper>

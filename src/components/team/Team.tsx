@@ -19,12 +19,18 @@ type Props = {
   lang?: "en" | "ja";
 };
 
+const THRESHOLD = 0;
+const ROOT_MARGIN = '-50% 0px'
+
 const Team = ({ lang = "ja" }: Props) => {
   const [currentSection, setCurrentSection] = useState("researchStaffs");
 
   const onChangeIntersection = (inView: boolean, sectionName: string) => {
-    if (inView && currentSection !== sectionName) {
+    if (inView) {
       setCurrentSection(sectionName);
+      console.log(sectionName);
+      console.log(inView);
+      
     }
   };
 
@@ -39,16 +45,17 @@ const Team = ({ lang = "ja" }: Props) => {
               onChangeIntersection(inView, "researchStaffs")
             }
             className={styles.section}
-            id="researchStaffs"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="researchStaffs" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Research Staffs</h2>
             <div className={styles.sectionContents}>
               <div className={styles.professors}>
                 {researchStaffs.slice(0, 2).map((member) => (
                   <div>
                     <figure className={styles.img}>
-                      <img src={member.imgUrl} alt="" />
+                      <img src={member.imgUrl} loading="lazy" alt="" />
                     </figure>
                     <p className={styles.professorTitle}>{member.title}</p>
                     <h3 className={styles.professorName}>{member.name}</h3>
@@ -66,7 +73,7 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img src={member.imgUrl} alt="" />
+                        <img loading="lazy" src={member.imgUrl} alt="" />
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -86,9 +93,10 @@ const Team = ({ lang = "ja" }: Props) => {
               onChangeIntersection(inView, "visitingResearchers")
             }
             className={styles.section}
-            id="visitingResearchers"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="visitingResearchers" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Visiting Researchers</h2>
             <div className={styles.sectionContents}>
               <div className={styles.members}>
@@ -96,7 +104,7 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img src={member.imgUrl} alt="" />
+                        <img loading="lazy" src={member.imgUrl} alt="" />
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -116,9 +124,10 @@ const Team = ({ lang = "ja" }: Props) => {
               onChangeIntersection(inView, "administrativeStaffs")
             }
             className={styles.section}
-            id="administrativeStaffs"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="administrativeStaffs" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Administrative Staffs</h2>
             <div className={styles.sectionContents}>
               <div className={styles.members}>
@@ -143,9 +152,10 @@ const Team = ({ lang = "ja" }: Props) => {
             as="section"
             onChange={(inView) => onChangeIntersection(inView, "phdStudents")}
             className={styles.section}
-            id="phdStudents"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="phdStudents" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Ph.D Students</h2>
             <div className={styles.sectionContents}>
               <div className={styles.members}>
@@ -153,7 +163,7 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img src={member.imgUrl} alt="" />
+                        <img loading="lazy" src={member.imgUrl} alt="" />
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -175,9 +185,10 @@ const Team = ({ lang = "ja" }: Props) => {
               onChangeIntersection(inView, "masterStudents")
             }
             className={styles.section}
-            id="masterStudents"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="masterStudents" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Master Students</h2>
             <div className={styles.sectionContents}>
               <div className={styles.members}>
@@ -185,7 +196,7 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img src={member.imgUrl} alt="" />
+                        <img loading="lazy" src={member.imgUrl} alt="" />
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -204,9 +215,10 @@ const Team = ({ lang = "ja" }: Props) => {
               onChangeIntersection(inView, "undergraduateStudents")
             }
             className={styles.section}
-            id="undergraduateStudents"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="undergraduateStudents" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Undergraduate Students</h2>
             <div className={styles.sectionContents}>
               <div className={styles.members}>
@@ -214,7 +226,7 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img src={member.imgUrl} alt="" />
+                        <img loading="lazy" src={member.imgUrl} alt="" />
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -228,9 +240,10 @@ const Team = ({ lang = "ja" }: Props) => {
             as="section"
             onChange={(inView) => onChangeIntersection(inView, "alumni")}
             className={styles.section}
-            id="alumni"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="alumni" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Alumni</h2>
             <div className={styles.alumni}>
               {alumni.map((item) => {

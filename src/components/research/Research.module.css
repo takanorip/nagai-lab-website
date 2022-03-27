@@ -13,11 +13,17 @@
   gap: var(--spacing-21);
 }
 
+.anchor {
+  position: absolute;
+  top: -25vh;
+}
+
 .section {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-8);
   align-items: center;
+  position: relative;
 }
 
 .sectionTitle {

@@ -15,6 +15,9 @@ type Props = {
   lang?: "en" | "ja";
 };
 
+const THRESHOLD = 0;
+const ROOT_MARGIN = '-50% 0px'
+
 const selectedPapers = publications
   .map((p) => p.contents)
   .map((c) => c[0].items)
@@ -63,16 +66,17 @@ const Research = ({ lang = "ja", topics }: Props) => {
             as="section"
             onChange={(inView) => onChangeIntersection(inView, "project")}
             className={styles.section}
-            id="project"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="project" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Main Projects</h2>
             <div className={styles.sectionContents}>
               {projects.map((p) => {
                 return (
                   <a className={styles.content} href={p.url} key={p.title}>
                     <figure className={styles.contentImg}>
-                      <img src={`/assets/${p.imgUrl}`} alt="" />
+                      <img loading="lazy" src={`/assets/${p.imgUrl}`} alt="" />
                     </figure>
                     <div className={styles.contentRight}>
                       <h3 className={styles.contentTitle}>{p.title}</h3>
@@ -87,9 +91,10 @@ const Research = ({ lang = "ja", topics }: Props) => {
             as="section"
             onChange={(inView) => onChangeIntersection(inView, "papers")}
             className={styles.section}
-            id="papers"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="papers" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Selected Papers</h2>
             <ul className={styles.papers}>
               {selectedPapers.map((p) => (
@@ -104,9 +109,10 @@ const Research = ({ lang = "ja", topics }: Props) => {
             as="section"
             onChange={(inView) => onChangeIntersection(inView, "topics")}
             className={styles.section}
-            id="topics"
-            threshold={0.5}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
           >
+            <span id="topics" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Research Topics</h2>
             <Select label="" value={selectedValue} onChange={onChange}>
               <option value="">All</option>

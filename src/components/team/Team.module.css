@@ -13,10 +13,16 @@
   gap: var(--spacing-13);
 }
 
+.anchor {
+  position: absolute;
+  top: -25vh;
+}
+
 .section {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
+  position: relative;
 }
 
 .sectionTitle {
@@ -112,13 +118,13 @@
 .alumni {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-3);
+  gap: var(--spacing-5);
 }
 
 .degreeSectionWrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-0);
+  gap: var(--spacing-2);
 }
 
 .degreeSection {
@@ -128,9 +134,13 @@
 }
 
 .alumniYear {
-  margin-bottom: var(--spacing-1);
+  margin-bottom: var(--spacing-3);
+  padding: var(--spacing-2);
+  border-bottom: 2px solid var(--border);
   font-size: var(--font-size-large);
   line-height: 1;
+  background-color: var(--background-gray);
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
 }
 
 .alumniDegree {
