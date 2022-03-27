@@ -4,7 +4,7 @@ import Main from "../common/Main";
 
 const NotFound = () => {
   return (
-    <Main>
+    <Main className={styles.main}>
       <div className={styles.wrapper}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

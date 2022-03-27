@@ -1,3 +1,8 @@
+.main {
+  display: grid;
+  min-height: calc(100% - 178px);
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
