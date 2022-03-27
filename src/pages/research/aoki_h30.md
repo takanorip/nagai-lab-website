@@ -2,7 +2,7 @@
 title: 多感覚情報からの潜在情報の学習
 subTitle: 認知発達過程の再現に向けて
 author: 青木 達哉(Tatsuya Aoki)
-thumbnail: Aoki_h30.jpg
+thumbnail: aoki_h30.jpg
 mainPublications:
   - Variational Autoencoderを用いたマルチモーダル情報の統合, 第80回全国大会講演論文集, 2018(1), 17-18.
 current: true

@@ -1,6 +1,6 @@
 ---
 title: 社会的感情獲得へ向けた感情モデルの構築
-mainVisualUrl: /assets/projects/hieida_h30/haikei.jpg
+mainVisualUrl: /assets/projects/Hieida_h30/haikei.jpg
 author: 日永田 智絵 (Chie Hieida)
 thumbnail: hieida_h30.jpg
 mainPublications:
