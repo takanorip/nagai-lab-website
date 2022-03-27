@@ -16,6 +16,7 @@ body {
 
 a {
   color: var(--primary-red);
+  transition:  all 0.3s var(--ease-out-expo);
 }
 
 :root {

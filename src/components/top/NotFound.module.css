@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  margin: var(--spacing-5) 0 var(--spacing-3);
+  font-size: var(--font-size-h3);
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+}
+
+.text a:hover {
+  text-decoration: none;
+}

@@ -8,13 +8,14 @@
   grid-template-columns: 1fr 24px;
   align-items: center;
   text-decoration: none;
+  color: var(--body-black);
 }
 
 .card:hover {
   border-color: var(--primary-red);
+  color: var(--primary-red);
 }
 
-.card:hover .title,
 .card:hover .icon {
   color: var(--primary-red);
 }
@@ -26,13 +27,13 @@
 }
 
 .title {
-  color: var(--body-black);
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 
 .icon {
   color: var(--medium-gray);
+  transition:  color 0.3s var(--ease-out-expo);
 }
 
 .noLink {

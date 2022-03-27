@@ -182,6 +182,10 @@
   text-decoration: none;
 }
 
+.menu:hover {
+  color: var(--primary-red);
+}
+
 .menu.active {
   color: var(--primary-red);
   font-weight: bold;

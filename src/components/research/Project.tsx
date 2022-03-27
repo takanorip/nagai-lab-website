@@ -72,7 +72,12 @@ const Project: FC<Props> = ({
               {slideImages.map((image) => (
                 <SwiperSlide key={image}>
                   <figure className={styles.slideImageWrapper}>
-                    <img loading="lazy" className={styles.slideImage} src={image} alt="" />
+                    <img
+                      loading="lazy"
+                      className={styles.slideImage}
+                      src={image}
+                      alt=""
+                    />
                   </figure>
                 </SwiperSlide>
               ))}
@@ -142,7 +147,9 @@ const Project: FC<Props> = ({
           )}
         </div>
         <div className={styles.backToList}>
-          <Button type={'outlined'} href="/research#topics">Back to list</Button>
+          <Button type={"outlined"} href="/research#topics">
+            Back to list
+          </Button>
         </div>
       </div>
     </Main>

@@ -16,7 +16,7 @@ type Props = {
 };
 
 const THRESHOLD = 0;
-const ROOT_MARGIN = '-50% 0px'
+const ROOT_MARGIN = "-50% 0px";
 
 const selectedPapers = publications
   .map((p) => p.contents)
