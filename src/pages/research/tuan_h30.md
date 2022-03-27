@@ -1,7 +1,7 @@
 ---
 title: 自己意図の発達から他者意図の推定へ
 subTitle: 他者との協調を学ぶ4段階モデル
-mainVisualUrl: /assets/projects/tuan_h30/tuan_haikei.jpg
+mainVisualUrl: /assets/projects/Tuan_h30/tuan_haikei.jpg
 author: トゥアングエン (Tuan Anh Nguyen)
 thumbnail: tuan_h30.jpg
 mainPublications:

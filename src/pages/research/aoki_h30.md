@@ -2,23 +2,23 @@
 title: 多感覚情報からの潜在情報の学習
 subTitle: 認知発達過程の再現に向けて
 author: 青木 達哉(Tatsuya Aoki)
-thumbnail: aoki_h30.jpg
+thumbnail: Aoki_h30.jpg
 mainPublications:
   - Variational Autoencoderを用いたマルチモーダル情報の統合, 第80回全国大会講演論文集, 2018(1), 17-18.
 current: true
 year: 2018
 slideImages:
-  - /assets/projects/aoki_h30/slide0.JPG
-  - /assets/projects/aoki_h30/slide1.JPG
-  - /assets/projects/aoki_h30/slide2.JPG
-  - /assets/projects/aoki_h30/slide3.JPG
-  - /assets/projects/aoki_h30/slide4.JPG
-  - /assets/projects/aoki_h30/slide5.JPG
-  - /assets/projects/aoki_h30/slide6.JPG
-  - /assets/projects/aoki_h30/slide7.JPG
-  - /assets/projects/aoki_h30/slide8.JPG
-  - /assets/projects/aoki_h30/slide9.JPG
-  - /assets/projects/aoki_h30/slide10.JPG
+  - /assets/projects/Aoki_h30/slide0.JPG
+  - /assets/projects/Aoki_h30/slide1.JPG
+  - /assets/projects/Aoki_h30/slide2.JPG
+  - /assets/projects/Aoki_h30/slide3.JPG
+  - /assets/projects/Aoki_h30/slide4.JPG
+  - /assets/projects/Aoki_h30/slide5.JPG
+  - /assets/projects/Aoki_h30/slide6.JPG
+  - /assets/projects/Aoki_h30/slide7.JPG
+  - /assets/projects/Aoki_h30/slide8.JPG
+  - /assets/projects/Aoki_h30/slide9.JPG
+  - /assets/projects/Aoki_h30/slide10.JPG
 layout: ../../layouts/project.astro
 ---
 

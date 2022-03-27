@@ -71,7 +71,9 @@ const Project: FC<Props> = ({
             >
               {slideImages.map((image) => (
                 <SwiperSlide key={image}>
-                  <img loading="lazy" className={styles.slideImage} src={image} alt="" />
+                  <figure className={styles.slideImageWrapper}>
+                    <img loading="lazy" className={styles.slideImage} src={image} alt="" />
+                  </figure>
                 </SwiperSlide>
               ))}
             </Swiper>

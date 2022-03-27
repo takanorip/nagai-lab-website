@@ -226,8 +226,20 @@
   margin-top: var(--spacing-8);
 }
 
+.slideImageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+
 .slideImage {
   width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: contain;
 }
 
 .control {
