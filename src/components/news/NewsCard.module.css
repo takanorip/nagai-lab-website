@@ -33,7 +33,7 @@
 
 .icon {
   color: var(--medium-gray);
-  transition:  color 0.3s var(--ease-out-expo);
+  transition: color 0.3s var(--ease-out-expo);
 }
 
 .noLink {

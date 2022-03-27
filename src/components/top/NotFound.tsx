@@ -28,7 +28,9 @@ const NotFound = () => {
         </svg>
         <h1 className={styles.title}>Page Not Found</h1>
         <p className={styles.text}>The page could not be found. </p>
-        <p className={styles.text}><a href="/">Back to home.</a></p>
+        <p className={styles.text}>
+          <a href="/">Back to home.</a>
+        </p>
       </div>
     </Main>
   );

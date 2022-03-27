@@ -29,19 +29,33 @@
   letter-spacing: 6px;
 }
 
-.mainVisual {
-  max-width: 1440px;
+.slideWrapper {
+  width: 100%;
+  max-width: 1344px;
   margin: 0 auto;
-  padding: 0 var(--spacing-8);
+  padding: 0 var(--spacing-2);
+}
+
+.slide {
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  --swiper-theme-color: var(--primary-red);
+  --swiper-pagination-bullet-inactive-color: var(--background-gray);
+  --swiper-pagination-bullet-inactive-opacity: 0.72;
+  --swiper-pagination-bullet-horizontal-gap: var(--spacing-1);
+}
+
+.mainVisual {
+  width: 100%;
   line-height: 0;
 }
 
 .mainVisual img {
-  max-width: 100%;
+  width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 40px;
-  border: 1px solid var(--border);
 }
 
 .section {

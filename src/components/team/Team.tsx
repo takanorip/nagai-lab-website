@@ -51,10 +51,14 @@ const Team = ({ lang = "ja" }: Props) => {
             <h2 className={styles.sectionTitle}>Research Staffs</h2>
             <div className={styles.sectionContents}>
               <div className={styles.professors}>
-                {researchStaffs.slice(0, 2).map((member) => (
+                {researchStaffs.slice(0, 2).map((member, i) => (
                   <div>
                     <figure className={styles.img}>
-                      <img src={member.imgUrl} loading="lazy" alt="" />
+                      <img
+                        src={member.imgUrl}
+                        loading={i < 2 ? "eager" : "lazy"}
+                        alt=""
+                      />
                     </figure>
                     <p className={styles.professorTitle}>{member.title}</p>
                     <h3 className={styles.professorName}>{member.name}</h3>

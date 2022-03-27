@@ -10,13 +10,11 @@ html {
 body {
   line-height: 1.5;
   height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 178px;
 }
 
 a {
   color: var(--primary-red);
-  transition:  all 0.3s var(--ease-out-expo);
+  transition: all 0.3s var(--ease-out-expo);
 }
 
 :root {

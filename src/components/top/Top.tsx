@@ -1,4 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Pagination } from "swiper";
+import "/node_modules/swiper/swiper.min.css";
+import "/node_modules/swiper/modules/effect-fade/effect-fade.min.css";
+import "/node_modules/swiper/modules/pagination/pagination.min.css";
 import styles from "./Top.module.css";
 import Main from "../common/Main";
 import Button from "../common/Button";
@@ -206,12 +211,53 @@ const Top = ({ lang = "ja" }: Props) => {
           <p className={styles.labName}>{dictionary.labName[lang]}</p>
         </div>
       </section>
-      <figure className={styles.mainVisual}>
-        <picture>
-          <source srcset="/assets/main-visual.webp" type="image/webp" />
-          <img loading="lazy" src="/assets/main-visual.jpg" alt="" />
-        </picture>
-      </figure>
+      <div className={styles.slideWrapper}>
+      <Swiper
+        effect={"fade"}
+        className={styles.slide}
+        modules={[Autoplay, EffectFade, Pagination]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+      >
+        <SwiperSlide>
+          <figure className={styles.mainVisual}>
+            <picture>
+              <source srcSet="/assets/main-visual01.webp" type="image/webp" />
+              <img src="/assets/main-visual01.jpg" alt="" />
+            </picture>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          <figure className={styles.mainVisual}>
+            <picture>
+              <source srcSet="/assets/main-visual02.webp" type="image/webp" />
+              <img src="/assets/main-visual02.jpg" alt="" />
+            </picture>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          <figure className={styles.mainVisual}>
+            <picture>
+              <source srcSet="/assets/main-visual03.webp" type="image/webp" />
+              <img src="/assets/main-visual03.jpg" alt="" />
+            </picture>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          <figure className={styles.mainVisual}>
+            <picture>
+              <source srcSet="/assets/main-visual04.webp" type="image/webp" />
+              <img src="/assets/main-visual04.jpg" alt="" />
+            </picture>
+          </figure>
+        </SwiperSlide>
+      </Swiper>
+      </div>
       <section className={styles.section}>
         <div className={styles.about}>
           <div className={styles.aboutMessages}>
@@ -239,7 +285,7 @@ const Top = ({ lang = "ja" }: Props) => {
           </div>
           <figure className={styles.aboutImg}>
             <picture>
-              <source srcset="/assets/top-about.webp" type="image/webp" />
+              <source srcSet="/assets/top-about.webp" type="image/webp" />
               <img loading="lazy" src="/assets/top-about.jpg" alt="" />
             </picture>
           </figure>
