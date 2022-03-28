@@ -3,7 +3,7 @@ title: 子ども達の行動解析
 subTitle: 他者との関わり方
 mainVisualUrl: /assets/projects/yamashita_h29/haikei.jpeg
 author: 山下 舜人 (Shunto Yamashita)
-thumbnail: yamashita_h29.png
+thumbnail: yamashita_h29.jpg
 year: 2017
 mainPublications:
 layout: ../../layouts/project.astro

@@ -2,7 +2,7 @@
 title: ロボットによる理解に基づいた意思決定モデルの構築
 subTitle: より賢いロボットを目指して
 author: Kazuki Miyazawa
-thumbnail: miyazawa_h29.png
+thumbnail: miyazawa_h29.jpg
 year: 2017
 mainPublications:
   - 宮澤 和貴，青木 達哉, 日永田 智絵, 岩田 健輔, 中村 友昭, 長井 隆行, "多層マルチモーダルLDAを用いた報酬のモデル化", 3D2-OS-37b-2, 第31回人工知能学会全国大会, May.2017

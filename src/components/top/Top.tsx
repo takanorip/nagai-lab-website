@@ -286,7 +286,7 @@ const Top = ({ lang = "ja" }: Props) => {
           <figure className={styles.aboutImg}>
             <picture>
               <source srcSet="/assets/top-about.webp" type="image/webp" />
-              <img loading="lazy" src="/assets/top-about.jpg" alt="" />
+              <img width={672} height={466} loading="lazy" src="/assets/top-about.jpg" alt="" />
             </picture>
           </figure>
         </div>
