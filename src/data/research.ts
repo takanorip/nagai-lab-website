@@ -31,68 +31,78 @@ export const projects = [
 
 export const equipments = [
   {
-    category: 'Facilities',
+    category: "Facilities",
     contents: [
       {
-        title: '居室',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "居室",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: '実験室（家庭環境）',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "実験室（家庭環境）",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: '実験室（病室環境）',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "実験室（病室環境）",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: 'サーバールーム',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
-      }
-    ]
+        title: "サーバールーム",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
+      },
+    ],
   },
   {
-    category: 'Robots',
+    category: "Robots",
     contents: [
       {
-        title: 'HSR',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "HSR",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: 'Torobo',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "Torobo",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: 'Baxter',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "Baxter",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: 'Spot',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
-      }
-    ]
+        title: "Spot",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
+      },
+    ],
   },
   {
-    category: 'Computers',
+    category: "Computers",
     contents: [
       {
-        title: 'NVIDIA DGX A100',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
+        title: "NVIDIA DGX A100",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
       },
       {
-        title: 'NVIDIA DGX station',
-        description: '笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。',
-        imgUrl: '/assets/ChiCaRo_logo.png',
-      }
-    ]
+        title: "NVIDIA DGX station",
+        description:
+          "笑って済ませる時はそれでも久しぶりにこう落ち合ってみると、Ｋは応じません。しかしその言葉の中に裹まれて、結婚はいつですかとただ一口いっただけでした。Ｋはただ学問が自分の考えているか知りません。",
+        imgUrl: "/assets/ChiCaRo_logo.png",
+      },
+    ],
   },
 ];

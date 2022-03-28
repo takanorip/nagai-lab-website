@@ -5,7 +5,7 @@ import Main from "../common/Main";
 import PageHeader from "../common/PageHeader";
 import Select from "../common/Select";
 import Button from "../common/Button";
-import { projects } from "../../data/research";
+import { projects, equipments } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
 import { useBudouX } from "../../utils/useBudoux";
@@ -76,13 +76,53 @@ const Research = ({ lang = "ja", topics }: Props) => {
                 return (
                   <a className={styles.content} href={p.url} key={p.title}>
                     <figure className={styles.contentImg}>
-                      <img loading="lazy" src={`/assets/${p.imgUrl}`} alt="" />
+                      <img src={`/assets/${p.imgUrl}`} alt="" />
                     </figure>
                     <div className={styles.contentRight}>
                       <h3 className={styles.contentTitle}>{p.title}</h3>
                       <p className={styles.description}>{p.description}</p>
                     </div>
                   </a>
+                );
+              })}
+            </div>
+          </InView>
+          <InView
+            as="section"
+            onChange={(inView) => onChangeIntersection(inView, "equipments")}
+            className={styles.section}
+            threshold={THRESHOLD}
+            rootMargin={ROOT_MARGIN}
+          >
+            <span id="equipments" className={styles.anchor}></span>
+            <h2 className={styles.sectionTitle}>Equipments</h2>
+            <div className={styles.equipmentCategories}>
+              {equipments.map((category) => {
+                return (
+                  <div className={styles.equipment} key={category.category}>
+                    <h3 className={styles.equipmentCategory}>
+                      {category.category}
+                    </h3>
+                    <div className={styles.equipmentContents}>
+                      {category.contents.map((content) => {
+                        return (
+                          <div className={styles.equipmentContent}>
+                            <figure className={styles.equipmentImg}>
+                              <img loading="lazy" src={content.imgUrl} alt="" />
+                            </figure>
+                            <div className={styles.equipmentDetail}>
+                              <h4 className={styles.contentTitle}>
+                                {content.title}
+                              </h4>
+                              <p className={styles.description}>
+                                {content.description}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
                 );
               })}
             </div>
@@ -124,7 +164,21 @@ const Research = ({ lang = "ja", topics }: Props) => {
                 <li className={styles.topic}>
                   <a className={styles.topicLink} href={t.url}>
                     <figure className={styles.topicImg}>
-                      <img src={"/assets/thumbnails/" + t.thumbnail} alt="" />
+                      <picture>
+                        <source
+                          srcSet={
+                            "/assets/thumbnails/" +
+                            t.thumbnail.split(".")[0] +
+                            ".webp"
+                          }
+                          type="image/webp"
+                        />
+                        <img
+                          loading="lazy"
+                          src={"/assets/thumbnails/" + t.thumbnail}
+                          alt=""
+                        />
+                      </picture>
                     </figure>
                     <p className={styles.topicTitle}>{useBudouX(t.title)}</p>
                   </a>

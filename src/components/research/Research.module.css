@@ -98,6 +98,66 @@
   line-height: 1.7;
 }
 
+.equipmentCategories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.equipment {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.equipmentCategory {
+  font-size: var(--font-size-h3);
+  padding: 0 var(--spacing-2);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
+  line-height: 5rem;
+  background-color: var(--background-light-gray);
+}
+
+.equipmentContents {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  padding: var(--spacing-5);
+  border: 1px solid var(--border);
+  border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
+}
+
+.equipmentContent {
+  display: grid;
+  gap: var(--spacing-5);
+  grid-template-columns: 320px 1fr;
+  background-color: var(--white);
+}
+
+.equipmentImg {
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipmentImg img {
+  width: 100%;
+  height: auto;
+}
+
+.equipmentDetail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
 .papers {
   padding: 0;
   list-style: none;

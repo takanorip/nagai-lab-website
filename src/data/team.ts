@@ -138,7 +138,7 @@ export const masterStudents = [
     title: "M2",
     name: "Kazuaki Ohmori",
     description: "生体計測",
-    imgUrl: "/assets/team/ohmori.png",
+    imgUrl: "/assets/team/ohmori.jpg",
   },
   {
     title: "M2",
@@ -174,7 +174,7 @@ export const masterStudents = [
     title: "M2",
     name: "Carlos Chouza",
     description: "一般物体認識",
-    imgUrl: "/assets/team/Carlos.png",
+    imgUrl: "/assets/team/Carlos.jpg",
   },
   {
     title: "M1",
@@ -192,7 +192,7 @@ export const masterStudents = [
     title: "M1",
     name: "Kouichirou Kawasaki",
     description: "運動学習",
-    imgUrl: "/assets/team/kawasaki.jpeg",
+    imgUrl: "/assets/team/kawasaki.jpg",
   },
   {
     title: "M1",
@@ -239,7 +239,7 @@ export const undergraduateStudents = [
   {
     title: "B4",
     name: "Shunsuke Sato",
-    imgUrl: "/assets/team/sato.jpeg",
+    imgUrl: "/assets/team/sato.jpg",
   },
   {
     title: "B4",
@@ -254,7 +254,7 @@ export const undergraduateStudents = [
   {
     title: "B4",
     name: "Tomoka Muraoka",
-    imgUrl: "/assets/team/muraoka.JPG",
+    imgUrl: "/assets/team/muraoka.jpg",
   },
 ];
 

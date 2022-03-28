@@ -54,11 +54,17 @@ const Team = ({ lang = "ja" }: Props) => {
                 {researchStaffs.slice(0, 2).map((member, i) => (
                   <div>
                     <figure className={styles.img}>
-                      <img
-                        src={member.imgUrl}
-                        loading={i < 2 ? "eager" : "lazy"}
-                        alt=""
-                      />
+                      <picture>
+                        <source
+                          srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                          type="image/webp"
+                        />
+                        <img
+                          src={member.imgUrl}
+                          loading={i < 2 ? "eager" : "lazy"}
+                          alt=""
+                        />
+                      </picture>
                     </figure>
                     <p className={styles.professorTitle}>{member.title}</p>
                     <h3 className={styles.professorName}>{member.name}</h3>
@@ -76,7 +82,13 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img loading="lazy" src={member.imgUrl} alt="" />
+                        <picture>
+                          <source
+                            srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                            type="image/webp"
+                          />
+                          <img src={member.imgUrl} loading="lazy" alt="" />
+                        </picture>
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -107,7 +119,13 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img loading="lazy" src={member.imgUrl} alt="" />
+                        <picture>
+                          <source
+                            srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                            type="image/webp"
+                          />
+                          <img src={member.imgUrl} loading="lazy" alt="" />
+                        </picture>
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -138,7 +156,13 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img src={member.imgUrl} alt="" />
+                        <picture>
+                          <source
+                            srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                            type="image/webp"
+                          />
+                          <img src={member.imgUrl} loading="lazy" alt="" />
+                        </picture>
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -166,7 +190,13 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img loading="lazy" src={member.imgUrl} alt="" />
+                        <picture>
+                          <source
+                            srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                            type="image/webp"
+                          />
+                          <img src={member.imgUrl} loading="lazy" alt="" />
+                        </picture>
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -199,7 +229,13 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img loading="lazy" src={member.imgUrl} alt="" />
+                        <picture>
+                          <source
+                            srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                            type="image/webp"
+                          />
+                          <img src={member.imgUrl} loading="lazy" alt="" />
+                        </picture>
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>
@@ -229,7 +265,13 @@ const Team = ({ lang = "ja" }: Props) => {
                   return (
                     <div className={styles.content} key={member.name}>
                       <figure className={styles.img}>
-                        <img loading="lazy" src={member.imgUrl} alt="" />
+                        <picture>
+                          <source
+                            srcSet={member.imgUrl.split(".")[0] + ".webp"}
+                            type="image/webp"
+                          />
+                          <img src={member.imgUrl} loading="lazy" alt="" />
+                        </picture>
                       </figure>
                       <p className={styles.title}>{member.title}</p>
                       <h3 className={styles.name}>{member.name}</h3>

@@ -212,51 +212,74 @@ const Top = ({ lang = "ja" }: Props) => {
         </div>
       </section>
       <div className={styles.slideWrapper}>
-      <Swiper
-        effect={"fade"}
-        className={styles.slide}
-        modules={[Autoplay, EffectFade, Pagination]}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-      >
-        <SwiperSlide>
-          <figure className={styles.mainVisual}>
-            <picture>
-              <source srcSet="/assets/main-visual01.webp" type="image/webp" />
-              <img width={1312} height={738} src="/assets/main-visual01.jpg" alt="" />
-            </picture>
-          </figure>
-        </SwiperSlide>
-        <SwiperSlide>
-          <figure className={styles.mainVisual}>
-            <picture>
-              <source srcSet="/assets/main-visual02.webp" type="image/webp" />
-              <img width={1312} height={738} loading="lazy" src="/assets/main-visual02.jpg" alt="" />
-            </picture>
-          </figure>
-        </SwiperSlide>
-        <SwiperSlide>
-          <figure className={styles.mainVisual}>
-            <picture>
-              <source srcSet="/assets/main-visual03.webp" type="image/webp" />
-              <img width={1312} height={738} loading="lazy" src="/assets/main-visual03.jpg" alt="" />
-            </picture>
-          </figure>
-        </SwiperSlide>
-        <SwiperSlide>
-          <figure className={styles.mainVisual}>
-            <picture>
-              <source srcSet="/assets/main-visual04.webp" type="image/webp" />
-              <img width={1312} height={738} loading="lazy" src="/assets/main-visual04.jpg" alt="" />
-            </picture>
-          </figure>
-        </SwiperSlide>
-      </Swiper>
+        <Swiper
+          effect={"fade"}
+          className={styles.slide}
+          modules={[Autoplay, EffectFade, Pagination]}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+        >
+          <SwiperSlide>
+            <figure className={styles.mainVisual}>
+              <picture>
+                <source srcSet="/assets/main-visual01.webp" type="image/webp" />
+                <img
+                  width={1312}
+                  height={738}
+                  src="/assets/main-visual01.jpg"
+                  alt=""
+                />
+              </picture>
+            </figure>
+          </SwiperSlide>
+          <SwiperSlide>
+            <figure className={styles.mainVisual}>
+              <picture>
+                <source srcSet="/assets/main-visual02.webp" type="image/webp" />
+                <img
+                  width={1312}
+                  height={738}
+                  loading="lazy"
+                  src="/assets/main-visual02.jpg"
+                  alt=""
+                />
+              </picture>
+            </figure>
+          </SwiperSlide>
+          <SwiperSlide>
+            <figure className={styles.mainVisual}>
+              <picture>
+                <source srcSet="/assets/main-visual03.webp" type="image/webp" />
+                <img
+                  width={1312}
+                  height={738}
+                  loading="lazy"
+                  src="/assets/main-visual03.jpg"
+                  alt=""
+                />
+              </picture>
+            </figure>
+          </SwiperSlide>
+          <SwiperSlide>
+            <figure className={styles.mainVisual}>
+              <picture>
+                <source srcSet="/assets/main-visual04.webp" type="image/webp" />
+                <img
+                  width={1312}
+                  height={738}
+                  loading="lazy"
+                  src="/assets/main-visual04.jpg"
+                  alt=""
+                />
+              </picture>
+            </figure>
+          </SwiperSlide>
+        </Swiper>
       </div>
       <section className={styles.section}>
         <div className={styles.about}>
@@ -286,7 +309,13 @@ const Top = ({ lang = "ja" }: Props) => {
           <figure className={styles.aboutImg}>
             <picture>
               <source srcSet="/assets/top-about.webp" type="image/webp" />
-              <img width={672} height={466} loading="lazy" src="/assets/top-about.jpg" alt="" />
+              <img
+                width={672}
+                height={466}
+                loading="lazy"
+                src="/assets/top-about.jpg"
+                alt=""
+              />
             </picture>
           </figure>
         </div>
