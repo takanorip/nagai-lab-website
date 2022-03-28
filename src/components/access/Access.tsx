@@ -30,6 +30,9 @@ const Access = ({ lang = "ja" }: Props) => {
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
+              title={
+                dictionary.osakaName1[lang] + " " + dictionary.osakaName2[lang]
+              }
             ></iframe>
           </div>
         </div>
@@ -50,6 +53,9 @@ const Access = ({ lang = "ja" }: Props) => {
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
+              title={
+                dictionary.uecName1[lang] + " " + dictionary.uecName2[lang]
+              }
             ></iframe>
           </div>
         </div>

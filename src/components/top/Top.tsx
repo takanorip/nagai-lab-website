@@ -304,7 +304,9 @@ const Top = ({ lang = "ja" }: Props) => {
                 <p>{dictionary.aboutMessage2[lang]}</p>
               </div>
             </div>
-            <Button href={`/${lang === "en" && `en/`}team`}>View More</Button>
+            <Button href={`/${lang === "en" ? `en/` : ""}team`}>
+              View Our Team
+            </Button>
           </div>
           <figure className={styles.aboutImg}>
             <picture>
@@ -367,7 +369,9 @@ const Top = ({ lang = "ja" }: Props) => {
         <div className={styles.newsWrapper}>
           <div className={styles.newsLeftWrapper}>
             <h2 className={styles.heading}>News</h2>
-            <Button href={`/${lang === "en" && `en/`}news`}>View More</Button>
+            <Button href={`/${lang === "en" ? `en/` : ""}news`}>
+              View More
+            </Button>
           </div>
           <div className={styles.newsList}>
             {news.slice(0, 3).map(({ date, title, url }) => (

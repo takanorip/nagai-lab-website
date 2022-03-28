@@ -23,6 +23,8 @@
 .name {
   font-weight: bold;
   font-size: var(--font-size-large);
+  display: flex;
+  gap: var(--spacing-1);
 }
 
 .map {
