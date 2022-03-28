@@ -9,7 +9,7 @@ export default {
   },
   devOptions: {
     // hostname: 'localhost',  // The hostname to run the dev server on.
-    // port: 3000,             // The port to run the dev server on.
+    port: 3030,             // The port to run the dev server on.
   },
   renderers: ['@astrojs/renderer-react'],
   vite: {

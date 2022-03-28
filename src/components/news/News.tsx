@@ -46,13 +46,13 @@ const News = ({ lang = "ja" }: Props) => {
           <Select value={selectedValue} onChange={onChange}>
             <option value="">All</option>
             {years.map((y) => (
-              <option value={y}>{y}</option>
+              <option key={y} value={y}>{y}</option>
             ))}
           </Select>
         </div>
         <div className={styles.list}>
           {filteredNews.map(({ date, title, url }) => (
-            <NewsCard date={date} title={title} url={url} />
+            <NewsCard key={title} date={date} title={title} url={url} />
           ))}
         </div>
       </div>

@@ -47,7 +47,7 @@ const Project: FC<Props> = ({
         </h1>
         {mainVisualUrl && (
           <figure className={styles.mainVisual}>
-            <img loading="lazy" src={mainVisualUrl} alt="" />
+            <img src={mainVisualUrl} alt="" />
           </figure>
         )}
         <div className={styles.content}>{children}</div>
@@ -88,7 +88,7 @@ const Project: FC<Props> = ({
                 disabled={isBeginning}
                 className={styles.controlButton}
                 type="button"
-                ariaLabel="Got to Prev"
+                aria-label="Got to Prev"
               >
                 <svg
                   width="40"
@@ -111,7 +111,7 @@ const Project: FC<Props> = ({
                 disabled={isEnd}
                 className={styles.controlButton}
                 type="button"
-                ariaLabel="Got to Next"
+                aria-label="Got to Next"
               >
                 <svg
                   width="40"
