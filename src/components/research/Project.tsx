@@ -69,11 +69,11 @@ const Project: FC<Props> = ({
               modules={[Pagination]}
               className="slide"
             >
-              {slideImages.map((image) => (
+              {slideImages.map((image, index) => (
                 <SwiperSlide key={image}>
                   <figure className={styles.slideImageWrapper}>
                     <img
-                      loading="lazy"
+                      loading={index === 0 ? 'eager' : 'lazy'}
                       className={styles.slideImage}
                       src={image}
                       alt=""
@@ -88,6 +88,7 @@ const Project: FC<Props> = ({
                 disabled={isBeginning}
                 className={styles.controlButton}
                 type="button"
+                ariaLabel="Got to Prev"
               >
                 <svg
                   width="40"
@@ -110,6 +111,7 @@ const Project: FC<Props> = ({
                 disabled={isEnd}
                 className={styles.controlButton}
                 type="button"
+                ariaLabel="Got to Next"
               >
                 <svg
                   width="40"
