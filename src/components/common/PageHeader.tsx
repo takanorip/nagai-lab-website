@@ -5,7 +5,7 @@ const PageHeader: FC = ({ children }) => {
   return (
     <div className={styles.header}>
       <div className={styles.headerInner}>
-        <p className={styles.text}>{children}</p>
+        <h1 className={styles.text}>{children}</h1>
       </div>
       <svg
         className={styles.icon}
