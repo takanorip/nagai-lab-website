@@ -9,6 +9,9 @@ import { projects, equipments } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
 import { useBudouX } from "../../utils/useBudoux";
+import { Robot } from "../common/icons/Robot";
+import { Computer } from "../common/icons/Computer";
+import { Room } from "../common/icons/Room";
 
 type Props = {
   topics: any;
@@ -101,6 +104,9 @@ const Research = ({ lang = "ja", topics }: Props) => {
                 return (
                   <div className={styles.equipment} key={category.category}>
                     <h3 className={styles.equipmentCategory}>
+                      {category.category === 'Facilities' && <Room />}
+                      {category.category === 'Robots' && <Robot />}
+                      {category.category === 'Computers' && <Computer />}
                       {category.category}
                     </h3>
                     <div className={styles.equipmentContents}>
@@ -108,7 +114,11 @@ const Research = ({ lang = "ja", topics }: Props) => {
                         return (
                           <div className={styles.equipmentContent}>
                             <figure className={styles.equipmentImg}>
-                              <img loading="lazy" src={content.imgUrl} alt="" />
+                              <img
+                                loading="lazy"
+                                src={`/assets/equipments/${content.imgUrl}`}
+                                alt=""
+                              />
                             </figure>
                             <div className={styles.equipmentDetail}>
                               <h4 className={styles.contentTitle}>
