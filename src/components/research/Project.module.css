@@ -275,3 +275,48 @@
   align-items: center;
   margin-top: var(--spacing-8);
 }
+
+@media (max-width: 1023px) {
+  .project {
+    padding: var(--spacing-5) var(--spacing-2) var(--spacing-8);
+  }
+
+  .title {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-5);
+  }
+
+  .subTitle {
+    font-size: var(--font-size-default);
+  }
+
+  .title::after {
+    width: 3rem;
+    margin-top: var(--spacing-3);
+  }
+
+  .content h2 {
+    margin: var(--spacing-5) 0 var(--spacing-3);
+  }
+
+  .content ul,
+  .content ol {
+    padding-left: var(--spacing-3);
+  }
+
+  .content math {
+    padding: var(--spacing-2);
+  }
+
+  .box {
+    padding: var(--spacing-2);
+  }
+
+  .author {
+    font-size: var(--font-size-default);
+  }
+
+  .author span {
+    margin-bottom: 0;
+  }
+}
