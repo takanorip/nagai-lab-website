@@ -26,3 +26,20 @@
   right: 0;
   transform: translateY(-50%);
 }
+
+@media (max-width: 1023px) {
+  .headerInner {
+    height: calc(144 / 16 * 1rem);
+    padding: 0 var(--spacing-2);
+  }
+
+  .text {
+    font-size: var(--font-size-h3);
+    letter-spacing: 4px;
+  }
+
+  .icon {
+    width: auto;
+    height: 6rem;
+  }
+}

@@ -51,7 +51,7 @@
 .professors {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
-  gap: var(--spacing-3);
+  gap: var(--spacing-5) var(--spacing-3);
 }
 
 .members {
@@ -202,4 +202,55 @@
   top: 55%;
   left: -1.125rem;
   transform: translateY(-51%);
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    padding: var(--spacing-5) var(--spacing-2) var(--spacing-8);
+    display: block;
+  }
+
+  .container {
+    gap: var(--spacing-8);
+  }
+
+  .sectionTitle {
+    gap: var(--spacing-05);
+    font-size: var(--font-size-large);
+  }
+
+  .sectionTitle::before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: 4px;
+  }
+
+  .sectionContents {
+    gap: var(--spacing-5);
+  }
+
+  .professorName {
+    font-size: var(--font-size-large);
+  }
+
+  .professorDescription {
+    font-size: var(--font-size-small);
+  }
+
+  .side {
+    display: none;
+  }
+
+  .degreeSection {
+    display: block;
+  }
+
+  .alumniDegree {
+    margin-bottom: var(--spacing-0);
+  }
+
+  .degreeSectionWrapper {
+    gap: var(--spacing-3);
+  }
 }
