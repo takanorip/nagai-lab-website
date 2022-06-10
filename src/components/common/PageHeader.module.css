@@ -35,7 +35,7 @@
 
   .text {
     font-size: var(--font-size-h3);
-    letter-spacing: 4px;
+    letter-spacing: 2px;
   }
 
   .icon {
