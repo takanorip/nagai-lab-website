@@ -48,9 +48,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
       </a>
       <button className={styles.menuButton} onClick={toggleDrawer}>
         MENU
-        <span className={styles.menuIcon}>
-          {isOpen ? <Close /> : <Menu />}
-        </span>
+        <span className={styles.menuIcon}>{isOpen ? <Close /> : <Menu />}</span>
       </button>
       <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.menu}>

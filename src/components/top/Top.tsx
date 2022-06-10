@@ -375,7 +375,10 @@ const Top: FC<Props> = ({ lang = "ja" }) => {
         <div className={styles.newsWrapper}>
           <div className={styles.newsLeftWrapper}>
             <h2 className={styles.heading}>News</h2>
-            <Button className="pc-only" href={`/${lang === "en" ? `en/` : ""}news`}>
+            <Button
+              className="pc-only"
+              href={`/${lang === "en" ? `en/` : ""}news`}
+            >
               View More
             </Button>
           </div>
@@ -384,7 +387,11 @@ const Top: FC<Props> = ({ lang = "ja" }) => {
               <NewsCard date={date} title={title} url={url} />
             ))}
           </div>
-          <Button className="sp-only" fullWidth href={`/${lang === "en" ? `en/` : ""}news`}>
+          <Button
+            className="sp-only"
+            fullWidth
+            href={`/${lang === "en" ? `en/` : ""}news`}
+          >
             View More
           </Button>
         </div>

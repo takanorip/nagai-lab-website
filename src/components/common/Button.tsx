@@ -9,9 +9,23 @@ type Props = {
   className?: string;
 };
 
-const Button: FC<Props> = ({ type = "normal", fullWidth = false, href, children, className }) => {
+const Button: FC<Props> = ({
+  type = "normal",
+  fullWidth = false,
+  href,
+  children,
+  className,
+}) => {
   return (
-    <a href={href} className={cx(styles.link, styles[type], className, fullWidth && styles.fullWidth)}>
+    <a
+      href={href}
+      className={cx(
+        styles.link,
+        styles[type],
+        className,
+        fullWidth && styles.fullWidth
+      )}
+    >
       {children}
     </a>
   );
