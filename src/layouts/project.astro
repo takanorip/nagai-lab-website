@@ -10,7 +10,7 @@ const { content } = Astro.props;
   <Head title={`${content.title} | 大阪大学基礎工学研究科 長井研究室`} />
 </head>
 <body>
-  <Header location="research" />
+  <Header client:load location="research" />
   <Project
     client:load
     title={content.title}

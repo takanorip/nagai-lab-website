@@ -46,7 +46,9 @@ const News = ({ lang = "ja" }: Props) => {
           <Select value={selectedValue} onChange={onChange}>
             <option value="">All</option>
             {years.map((y) => (
-              <option key={y} value={y}>{y}</option>
+              <option key={y} value={y}>
+                {y}
+              </option>
             ))}
           </Select>
         </div>

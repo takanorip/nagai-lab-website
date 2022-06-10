@@ -4,13 +4,14 @@ import styles from "./Button.module.css";
 
 type Props = {
   type?: "normal" | "outlined";
+  fullWidth?: boolean;
   href: string;
   className?: string;
 };
 
-const Button: FC<Props> = ({ type = "normal", href, children, className }) => {
+const Button: FC<Props> = ({ type = "normal", fullWidth = false, href, children, className }) => {
   return (
-    <a href={href} className={cx(styles.link, styles[type], className)}>
+    <a href={href} className={cx(styles.link, styles[type], className, fullWidth && styles.fullWidth)}>
       {children}
     </a>
   );

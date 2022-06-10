@@ -12,6 +12,10 @@
   letter-spacing: 1px;
 }
 
+.link.fullWidth {
+  width: 100%;
+}
+
 .link.normal {
   color: var(--white);
   background-color: var(--primary-red);
@@ -25,4 +29,10 @@
 .link.outlined:hover {
   color: var(--white);
   background-color: var(--primary-red);
+}
+
+@media (max-width: 640px) {
+  .link {
+    width: 100%;
+  }
 }

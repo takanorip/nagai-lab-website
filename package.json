@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "budoux": "^0.0.3",
+    "react-modern-drawer": "^1.1.1",
     "swiper": "^8.0.7"
   }
 }

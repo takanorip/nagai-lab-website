@@ -1,10 +1,11 @@
 .messages {
   display: flex;
   align-items: center;
-  gap: var(--spacing-13);
+  gap: var(--spacing-8) var(--spacing-13);
   max-width: 1440px;
   margin: 0 auto;
   padding: var(--spacing-13) var(--spacing-2) var(--spacing-8) 9rem;
+  flex-wrap: wrap;
 }
 
 .keyMessage {
@@ -60,9 +61,9 @@
 }
 
 .section {
-  max-width: 1440px;
+  max-width: 1248px;
   margin: 0 auto;
-  padding: var(--spacing-21) 7.5rem;
+  padding: var(--spacing-21) var(--spacing-2);
 }
 
 .heading {
@@ -85,10 +86,14 @@
   background-color: var(--primary-red);
 }
 
+.aboutWrapper {
+  overflow: hidden;
+}
+
 .about {
-  display: grid;
-  gap: var(--spacing-13);
-  grid-template-columns: 480px 1fr;
+  display: flex;
+  gap: var(--spacing-5);
+  justify-content: space-between;
 }
 
 .aboutMessages {
@@ -136,8 +141,11 @@
 }
 
 .aboutImg {
+  width: 672px;
+  max-width: 100%;
   line-height: 0;
   margin-right: -3.5rem;
+  flex: none;
 }
 
 .aboutImg img {
@@ -160,20 +168,14 @@
 }
 
 .researchList {
-  list-style: none;
   display: grid;
   gap: var(--spacing-2);
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
 }
 
 .researchItem {
   background-color: var(--white);
   border-radius: var(--border-radius-default);
-  padding-bottom: 2rem;
-}
-
-.researchItem a {
   text-decoration: none;
   color: var(--body-black);
 }
@@ -193,6 +195,7 @@
 .researchItemName {
   font-size: var(--font-size-h3);
   text-align: center;
+  padding: 0 0 2rem;
 }
 
 .newsLeftWrapper {
@@ -203,6 +206,7 @@
 
 .newsWrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-8);
   justify-content: space-between;
 }
@@ -213,4 +217,78 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
+}
+
+@media (max-width: 1023px) {
+  .messages {
+    padding: var(--spacing-5) var(--spacing-2);
+    gap: var(--spacing-5);
+  }
+
+  .lab {
+    gap: var(--spacing-2);
+  }
+
+  .labGroupLogo {
+    width: fit-content;
+    height: 2.25rem;
+  }
+
+  .labGroupName {
+    font-size: var(--font-size-small);
+  }
+
+  .labName {
+    font-size: var(--font-size-large);
+  }
+
+  .keyMessage {
+    font-size: var(--font-size-h3);
+  }
+
+  .slide {
+    border-radius: 8px;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .aboutMessages {
+    gap: var(--spacing-5);
+  }
+
+  .aboutImg img {
+    border-radius: 8px;
+  }
+
+  .section {
+    padding: var(--spacing-8) var(--spacing-2);
+  }
+
+  .heading {
+    font-size: var(--font-size-h3);
+    gap: var(--spacing-3);
+  }
+
+  .researchMessage {
+    margin-bottom: var(--spacing-5);
+  }
+
+  .researchItemIllust {
+    height: 200px;
+  }
+
+  .researchItemName {
+    padding: var(--spacing-2) 0;
+    font-size: var(--font-size-large);
+  }
+
+  .newsWrapper {
+    gap: var(--spacing-5);
+  }
+
+  .newsButton {
+    width: 100%;
+  }
 }

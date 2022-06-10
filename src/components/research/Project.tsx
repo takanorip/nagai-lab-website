@@ -73,7 +73,7 @@ const Project: FC<Props> = ({
                 <SwiperSlide key={image}>
                   <figure className={styles.slideImageWrapper}>
                     <img
-                      loading={index === 0 ? 'eager' : 'lazy'}
+                      loading={index === 0 ? "eager" : "lazy"}
                       className={styles.slideImage}
                       src={image}
                       alt=""

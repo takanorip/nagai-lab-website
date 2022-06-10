@@ -3325,6 +3325,11 @@ react-intersection-observer@^8.33.1:
   resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.33.1.tgz#8e6442cac7052ed63056e191b7539e423e7d5c64"
   integrity sha512-3v+qaJvp3D1MlGHyM+KISVg/CMhPiOlO6FgPHcluqHkx4YFCLuyXNlQ/LE6UkbODXlQcLOppfX6UMxCEkUhDLw==
 
+react-modern-drawer@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-modern-drawer/-/react-modern-drawer-1.1.1.tgz#928bf03337c72294f89eceb39743127863e99f51"
+  integrity sha512-LU79xfQ6f+bINXOie6rUFfU8tFWYjv5zkF03gDVTA9nkECgZZVtTvkata+R0aIbEBI6c/UFdlc/6XLWDOiD1tA==
+
 react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"

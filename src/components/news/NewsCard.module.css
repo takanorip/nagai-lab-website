@@ -9,6 +9,7 @@
   align-items: center;
   text-decoration: none;
   color: var(--body-black);
+  position: relative;
 }
 
 .card:hover {
@@ -26,8 +27,11 @@
   gap: var(--spacing-1);
 }
 
+.date {
+  color: var(--primary-red);
+}
+
 .title {
-  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
@@ -38,4 +42,17 @@
 
 .noLink {
   pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .card {
+    display: block;
+    padding: var(--spacing-2);
+  }
+
+  .icon {
+    position: absolute;
+    top: var(--spacing-2);
+    right: var(--spacing-2);
+  }
 }

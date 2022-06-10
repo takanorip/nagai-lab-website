@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import cx from "classnames";
 import styles from "./Header.module.css";
 import { dictionary } from "../../i18n/header";
+import { Menu } from "../common/icons/Menu";
+import { Close } from "../common/icons/Close";
 
 type Props = {
   location: string;
@@ -9,9 +11,11 @@ type Props = {
 };
 
 const Header = ({ location, lang = "ja" }: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDrawer = () => setIsOpen((prevState) => !prevState);
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <a href="/" className={styles.logo}>
         <svg
           className={styles.icon}
           width="41"
@@ -41,8 +45,14 @@ const Header = ({ location, lang = "ja" }: Props) => {
           <p className={styles.univ}>{dictionary.labDepartmentName[lang]}</p>
           <p className={styles.lab}>{dictionary.labName[lang]}</p>
         </div>
-      </div>
-      <nav className={styles.nav}>
+      </a>
+      <button className={styles.menuButton} onClick={toggleDrawer}>
+        MENU
+        <span className={styles.menuIcon}>
+          {isOpen ? <Close /> : <Menu />}
+        </span>
+      </button>
+      <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.menu}>
           <li className={cx(styles.menuItem, location === "" && styles.active)}>
             <a href="/">TOP</a>
@@ -88,7 +98,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
             <a href="/access">ACCESS</a>
           </li>
         </ul>
-        <div className={styles.langSwitch}>
+        {/* <div className={styles.langSwitch}>
           <a
             href="/"
             className={cx(
@@ -107,7 +117,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
           >
             EN
           </a>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

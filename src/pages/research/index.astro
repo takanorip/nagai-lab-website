@@ -11,7 +11,7 @@ const topicsData = data.sort((a, b) => b.year - a.year)
   <Head title="RESEARCH | 大阪大学基礎工学研究科 長井研究室" />
 </head>
 <body>
-  <Header location="research" />
+  <Header client:load location="research" />
   <Research topics={topicsData} client:load />
   <Footer />
 </body>

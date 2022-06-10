@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper";
 import "/node_modules/swiper/swiper.min.css";
@@ -19,7 +19,7 @@ type Props = {
   lang?: "en" | "ja";
 };
 
-const Top = ({ lang = "ja" }: Props) => {
+const Top: FC<Props> = ({ lang = "ja" }) => {
   return (
     <Main>
       <section className={styles.messages}>
@@ -281,47 +281,49 @@ const Top = ({ lang = "ja" }: Props) => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <section className={styles.section}>
-        <div className={styles.about}>
-          <div className={styles.aboutMessages}>
-            <div className={styles.aboutMessagesInner}>
-              <h2 className={styles.heading}>About</h2>
-              <div className={styles.aboutProverbWrapper}>
-                <p className={styles.aboutProverb}>
-                  "What I cannot create, I do not understand"
-                </p>
-                <p className={styles.aboutProverbName}>Richard Feynman</p>
+      <div className={styles.aboutWrapper}>
+        <section className={styles.section}>
+          <div className={styles.about}>
+            <div className={styles.aboutMessages}>
+              <div className={styles.aboutMessagesInner}>
+                <h2 className={styles.heading}>About</h2>
+                <div className={styles.aboutProverbWrapper}>
+                  <p className={styles.aboutProverb}>
+                    "What I cannot create, I do not understand"
+                  </p>
+                  <p className={styles.aboutProverbName}>Richard Feynman</p>
+                </div>
+                <div className={styles.aboutMessagesWrapper}>
+                  <p>
+                    <span className={styles.aboutMessage}>
+                      {dictionary.aboutMessage1_1[lang]}
+                    </span>
+                    <span className={styles.aboutMessage}>
+                      {dictionary.aboutMessage1_2[lang]}
+                    </span>
+                  </p>
+                  <p>{dictionary.aboutMessage2[lang]}</p>
+                </div>
               </div>
-              <div className={styles.aboutMessagesWrapper}>
-                <p>
-                  <span className={styles.aboutMessage}>
-                    {dictionary.aboutMessage1_1[lang]}
-                  </span>
-                  <span className={styles.aboutMessage}>
-                    {dictionary.aboutMessage1_2[lang]}
-                  </span>
-                </p>
-                <p>{dictionary.aboutMessage2[lang]}</p>
-              </div>
+              <Button href={`/${lang === "en" ? `en/` : ""}team`}>
+                View Our Team
+              </Button>
             </div>
-            <Button href={`/${lang === "en" ? `en/` : ""}team`}>
-              View Our Team
-            </Button>
+            <figure className={styles.aboutImg}>
+              <picture>
+                <source srcSet="/assets/top-about.webp" type="image/webp" />
+                <img
+                  width={672}
+                  height={466}
+                  loading="lazy"
+                  src="/assets/top-about.jpg"
+                  alt=""
+                />
+              </picture>
+            </figure>
           </div>
-          <figure className={styles.aboutImg}>
-            <picture>
-              <source srcSet="/assets/top-about.webp" type="image/webp" />
-              <img
-                width={672}
-                height={466}
-                loading="lazy"
-                src="/assets/top-about.jpg"
-                alt=""
-              />
-            </picture>
-          </figure>
-        </div>
-      </section>
+        </section>
+      </div>
       <div className={styles.researchOuter}>
         <section className={styles.section}>
           <h2 className={styles.heading}>Research</h2>
@@ -329,47 +331,51 @@ const Top = ({ lang = "ja" }: Props) => {
             <span>{dictionary.researchMessage1[lang]}</span>
             <span>{dictionary.researchMessage2[lang]}</span>
           </p>
-          <ul className={styles.researchList}>
-            <li className={styles.researchItem}>
-              <a href={`/${lang === "en" ? `en/` : ""}research/#projects`}>
-                <p className={styles.researchItemIllust}>
-                  <ProjectIllust />
-                </p>
-                <p className={styles.researchItemName}>Projects</p>
-              </a>
-            </li>
-            <li className={styles.researchItem}>
-              <a href={`/${lang === "en" ? `en/` : ""}research/#equipments`}>
-                <p className={styles.researchItemIllust}>
-                  <EquipmentsIllust />
-                </p>
-                <p className={styles.researchItemName}>Equipments</p>
-              </a>
-            </li>
-            <li className={styles.researchItem}>
-              <a href={`/${lang === "en" ? `en/` : ""}research/#papers`}>
-                <p className={styles.researchItemIllust}>
-                  <PapersIllust />
-                </p>
-                <p className={styles.researchItemName}>Papers</p>
-              </a>
-            </li>
-            <li className={styles.researchItem}>
-              <a href={`/${lang === "en" ? `en/` : ""}research/#topics`}>
-                <p className={styles.researchItemIllust}>
-                  <TopicsIllust />
-                </p>
-                <p className={styles.researchItemName}>Topics</p>
-              </a>
-            </li>
-          </ul>
+          <div className={styles.researchList}>
+            <a
+              className={styles.researchItem}
+              href={`/${lang === "en" ? `en/` : ""}research/#projects`}
+            >
+              <p className={styles.researchItemIllust}>
+                <ProjectIllust />
+              </p>
+              <p className={styles.researchItemName}>Projects</p>
+            </a>
+            <a
+              className={styles.researchItem}
+              href={`/${lang === "en" ? `en/` : ""}research/#equipments`}
+            >
+              <p className={styles.researchItemIllust}>
+                <EquipmentsIllust />
+              </p>
+              <p className={styles.researchItemName}>Equipments</p>
+            </a>
+            <a
+              className={styles.researchItem}
+              href={`/${lang === "en" ? `en/` : ""}research/#papers`}
+            >
+              <p className={styles.researchItemIllust}>
+                <PapersIllust />
+              </p>
+              <p className={styles.researchItemName}>Papers</p>
+            </a>
+            <a
+              className={styles.researchItem}
+              href={`/${lang === "en" ? `en/` : ""}research/#topics`}
+            >
+              <p className={styles.researchItemIllust}>
+                <TopicsIllust />
+              </p>
+              <p className={styles.researchItemName}>Topics</p>
+            </a>
+          </div>
         </section>
       </div>
       <section className={styles.section}>
         <div className={styles.newsWrapper}>
           <div className={styles.newsLeftWrapper}>
             <h2 className={styles.heading}>News</h2>
-            <Button href={`/${lang === "en" ? `en/` : ""}news`}>
+            <Button className="pc-only" href={`/${lang === "en" ? `en/` : ""}news`}>
               View More
             </Button>
           </div>
@@ -378,6 +384,9 @@ const Top = ({ lang = "ja" }: Props) => {
               <NewsCard date={date} title={title} url={url} />
             ))}
           </div>
+          <Button className="sp-only" fullWidth href={`/${lang === "en" ? `en/` : ""}news`}>
+            View More
+          </Button>
         </div>
       </section>
     </Main>

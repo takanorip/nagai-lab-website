@@ -14,7 +14,10 @@
 
 .logo {
   display: flex;
+  align-items: center;
   gap: var(--spacing-05);
+  text-decoration: none;
+  color: var(--body-black);
 }
 
 .icon {
@@ -42,6 +45,7 @@
   display: flex;
   gap: var(--spacing-3);
   font-weight: bold;
+  background-color: var(--white);
 }
 
 .menu {
@@ -97,4 +101,84 @@
 .langSwitchItem.active {
   background-color: var(--primary-red);
   color: var(--white);
+}
+
+.menuButton {
+  align-items: center;
+  padding: var(--spacing-2);
+  gap: var(--spacing-1);
+  font-weight: bold;
+  font-size: var(--font-size-default);
+  background: none;
+  border: none;
+  display: none;
+}
+
+.menuIcon {
+  color: var(--primary-red);
+  line-height: 0;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 0;
+  }
+
+  .icon {
+    width: auto;
+    height: 2rem;
+  }
+
+  .logo {
+    padding: var(--spacing-05) var(--spacing-2);
+    gap: var(--spacing-1);
+  }
+
+  .univ {
+    font-size: 0.625rem;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .lab {
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 57px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate3d(100%, 0px, 0px);
+    padding: var(--spacing-5) 0;
+    transition: all 0.3s var(--ease-out-cubic);
+    visibility: hidden;
+  }
+
+  .nav.open {
+    transform: translateZ(0)!important;
+    visibility: visible;
+  }
+
+  .menu {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menuItem {
+    width: 100%;
+  }
+  .menuItem a {
+    padding: 0 var(--spacing-3);
+    border-radius: 0;
+    font-size: var(--font-size-large);
+    font-weight: normal;
+    line-height: 3.5rem;
+  }
+  .menuButton {
+    display: flex;
+  }
 }
