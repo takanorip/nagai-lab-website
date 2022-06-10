@@ -317,7 +317,7 @@
     padding: var(--spacing-2);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap:  var(--spacing-3) var(--spacing-2);
+    gap: var(--spacing-3) var(--spacing-2);
   }
 
   .equipmentDetail {
