@@ -164,7 +164,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
           >
             <span id="topics" className={styles.anchor}></span>
             <h2 className={styles.sectionTitle}>Research Topics</h2>
-            <Select label="" value={selectedValue} onChange={onChange}>
+            <Select label="Category" value={selectedValue} onChange={onChange}>
               <option value="">All</option>
               <option value="current">Current Topics</option>
               <option value="previous">Previous Topics</option>
