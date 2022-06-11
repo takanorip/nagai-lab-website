@@ -28,8 +28,6 @@ const Team = ({ lang = "ja" }: Props) => {
   const onChangeIntersection = (inView: boolean, sectionName: string) => {
     if (inView) {
       setCurrentSection(sectionName);
-      console.log(sectionName);
-      console.log(inView);
     }
   };
 
