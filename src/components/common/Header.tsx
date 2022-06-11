@@ -53,7 +53,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
       <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.menu}>
           <li className={cx(styles.menuItem, location === "" && styles.active)}>
-            <a href="/">TOP</a>
+            <a href="/" onClick={() => setIsOpen(false)}>TOP</a>
           </li>
           <li
             className={cx(
@@ -61,7 +61,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
               location === "team" && styles.active
             )}
           >
-            <a href="/team">TEAM</a>
+            <a href="/team" onClick={() => setIsOpen(false)}>TEAM</a>
           </li>
           <li
             className={cx(
@@ -69,7 +69,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
               location === "research" && styles.active
             )}
           >
-            <a href="/research">RESEARCH</a>
+            <a href="/research" onClick={() => setIsOpen(false)}>RESEARCH</a>
           </li>
           <li
             className={cx(
@@ -77,7 +77,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
               location === "publication" && styles.active
             )}
           >
-            <a href="/publication">PUBLICATION</a>
+            <a href="/publication" onClick={() => setIsOpen(false)}>PUBLICATION</a>
           </li>
           <li
             className={cx(
@@ -85,7 +85,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
               location === "news" && styles.active
             )}
           >
-            <a href="/news">NEWS</a>
+            <a href="/news" onClick={() => setIsOpen(false)}>NEWS</a>
           </li>
           <li
             className={cx(
@@ -93,7 +93,7 @@ const Header = ({ location, lang = "ja" }: Props) => {
               location === "access" && styles.active
             )}
           >
-            <a href="/access">ACCESS</a>
+            <a href="/access" onClick={() => setIsOpen(false)}>ACCESS</a>
           </li>
         </ul>
         {/* <div className={styles.langSwitch}>
