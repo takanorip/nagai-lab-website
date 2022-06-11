@@ -55,7 +55,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
     (event) => {
       const value = event.target.value;
       setSelectedValue(value);
-      setFilteredTopics(filter(value));
+      setFilteredTopics(filter(value as "" | "previous" | "current"));
     },
     []
   );
