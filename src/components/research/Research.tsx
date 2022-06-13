@@ -104,9 +104,9 @@ const Research = ({ lang = "ja", topics }: Props) => {
                 return (
                   <div className={styles.equipment} key={category.category}>
                     <h3 className={styles.equipmentCategory}>
-                      {category.category === 'Facilities' && <Room />}
-                      {category.category === 'Robots' && <Robot />}
-                      {category.category === 'Computers' && <Computer />}
+                      {category.category === "Facilities" && <Room />}
+                      {category.category === "Robots" && <Robot />}
+                      {category.category === "Computers" && <Computer />}
                       {category.category}
                     </h3>
                     <div className={styles.equipmentContents}>
