@@ -8,13 +8,17 @@ import Button from "../common/Button";
 import { projects, equipments } from "../../data/research";
 import { publications } from "../../data/publication";
 import styles from "./Research.module.css";
-import { useBudouX } from "../../utils/useBudoux";
 import { Robot } from "../common/icons/Robot";
 import { Computer } from "../common/icons/Computer";
 import { Room } from "../common/icons/Room";
 
 type Props = {
-  topics: any;
+  topics: {
+    title: string;
+    url: string;
+    thumbnail: string;
+    current?: boolean;
+  }[];
   lang?: "en" | "ja";
 };
 
@@ -29,7 +33,7 @@ const selectedPapers = publications
 
 const Research = ({ lang = "ja", topics }: Props) => {
   const [currentSection, setCurrentSection] = useState("project");
-  const [selectedValue, setSelectedValue] = useState("");
+  const [selectedValue, setSelectedValue] = useState("current");
   const [filteredTopics, setFilteredTopics] = useState(topics);
 
   const filter = (type: "" | "previous" | "current") => {
@@ -112,7 +116,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
                     <div className={styles.equipmentContents}>
                       {category.contents.map((content) => {
                         return (
-                          <div className={styles.equipmentContent}>
+                          <div className={styles.equipmentContent} key={content.title}>
                             <figure className={styles.equipmentImg}>
                               <img
                                 loading="lazy"
@@ -148,7 +152,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
             <h2 className={styles.sectionTitle}>Selected Papers</h2>
             <ul className={styles.papers}>
               {selectedPapers.map((p) => (
-                <li className={styles.paper}>
+                <li className={styles.paper} key={p.text}>
                   {p.url ? <a href={p.url}>{p.text}</a> : <>{p.text}</>}
                 </li>
               ))}
@@ -171,7 +175,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
             </Select>
             <ul className={styles.topics}>
               {filteredTopics.map((t) => (
-                <li className={styles.topic}>
+                <li className={styles.topic} key={t.title+t.url}>
                   <a className={styles.topicLink} href={t.url}>
                     <figure className={styles.topicImg}>
                       <picture>
@@ -190,7 +194,7 @@ const Research = ({ lang = "ja", topics }: Props) => {
                         />
                       </picture>
                     </figure>
-                    <p className={styles.topicTitle}>{useBudouX(t.title)}</p>
+                    <p className={styles.topicTitle}>{t.title}</p>
                   </a>
                 </li>
               ))}

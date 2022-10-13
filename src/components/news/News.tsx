@@ -24,8 +24,8 @@ const filter = (year: string) => {
 };
 
 const News = ({ lang = "ja" }: Props) => {
-  const thisYear = useMemo(() => new Date().getFullYear());
-  const years = useMemo(() => [...range(2016, thisYear)].reverse());
+  const thisYear = useMemo(() => new Date().getFullYear(), []);
+  const years = useMemo(() => [...range(2016, thisYear)].reverse(), []);
 
   const [filteredNews, setFilteredNews] = useState(news);
   const [selectedValue, setSelectedValue] = useState("");

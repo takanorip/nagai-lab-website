@@ -7,6 +7,7 @@ type Props = {
   fullWidth?: boolean;
   href: string;
   className?: string;
+  children: React.ReactNode;
 };
 
 const Button: FC<Props> = ({

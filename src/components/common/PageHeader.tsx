@@ -1,7 +1,11 @@
 import React, { FC } from "react";
 import styles from "./PageHeader.module.css";
 
-const PageHeader: FC = ({ children }) => {
+type Props = {
+  children: React.ReactNode;
+}
+
+const PageHeader: FC<Props> = ({ children }) => {
   return (
     <div className={styles.header}>
       <div className={styles.headerInner}>
